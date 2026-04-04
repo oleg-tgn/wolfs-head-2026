@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 </head>
 <body class="text-gray-800">
 
@@ -20,6 +21,7 @@
         <a href="#about" class="hover:text-gold transition-colors">About</a>
         <a href="#nominations" class="hover:text-gold transition-colors">Nominations</a>
         <a href="#register" class="hover:text-gold transition-colors">Register</a>
+        <a href="#gallery" class="hover:text-gold transition-colors">Gallery</a>
         <a href="#venue" class="hover:text-gold transition-colors">Address</a>
       </div>
       <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold font-cinzel text-xs tracking-widest">Register</a>
@@ -31,12 +33,12 @@
   ═══════════════════════════════════════════ -->
   <section class="hero-bg relative pt-14">
     <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gold/40">
+    <!-- <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gold/40">
       <span class="text-xs tracking-widest uppercase font-cinzel">Scroll</span>
       <svg width="16" height="24" viewBox="0 0 16 24" fill="none" class="animate-bounce">
         <path d="M8 0v20M2 14l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
       </svg>
-    </div>
+    </div> -->
   </section>
 
   <!-- ═══════════════════════════════════════════
@@ -153,29 +155,9 @@
   </section>
 
   <!-- ═══════════════════════════════════════════
-       PHOTO GALLERY (placeholder)
-  ═══════════════════════════════════════════ -->
-  <section id="gallery" class="py-24 px-6">
-    <div class="max-w-5xl mx-auto">
-      <div class="divider-ornament mb-14">
-        <span class="section-title text-sm tracking-[0.3em]">Gallery</span>
-      </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-        <!-- TODO: Replace with real photos -->
-        <div class="aspect-square bg-gray-900 border border-gold/10 rounded flex items-center justify-center text-gray-800 text-xs font-cinzel">photo 1</div>
-        <div class="aspect-square bg-gray-900 border border-gold/10 rounded flex items-center justify-center text-gray-800 text-xs font-cinzel">photo 2</div>
-        <div class="aspect-square bg-gray-900 border border-gold/10 rounded flex items-center justify-center text-gray-800 text-xs font-cinzel">photo 3</div>
-        <div class="aspect-[2/1] bg-gray-900 border border-gold/10 rounded col-span-2 flex items-center justify-center text-gray-800 text-xs font-cinzel">photo 4 — wide</div>
-        <div class="aspect-square bg-gray-900 border border-gold/10 rounded flex items-center justify-center text-gray-800 text-xs font-cinzel">photo 5</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
        REGISTRATION
   ═══════════════════════════════════════════ -->
-  <section id="register" class="py-24 px-6 bg-gray-50">
+  <section id="register" class="py-24 px-6">
     <div class="max-w-2xl mx-auto text-center">
       <div class="divider-ornament mb-12">
         <span class="section-title text-sm tracking-[0.3em]">Registration</span>
@@ -208,6 +190,68 @@
         or
         <a href="https://www.instagram.com/st.george_hema_school/" target="_blank" rel="noopener noreferrer" class="text-gold/70 hover:text-gold underline">Instagram</a>
       </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PHOTO GALLERY
+  ═══════════════════════════════════════════ -->
+  <section id="gallery" class="py-24 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto">
+      <div class="divider-ornament mb-14">
+        <span class="section-title text-sm tracking-[0.3em]">Gallery</span>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+
+        <!-- Row 1: wide + square -->
+        <a href="img/protos/1.jpg" class="glightbox gallery-thumb col-span-2 aspect-[2/1]" data-gallery="gallery2026">
+          <img src="img/protos/1.jpg" alt="Wolf's Head" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0zm-2 0a4 4 0 11-8 0"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 8v6M8 11h6"/></svg></div>
+        </a>
+        <a href="img/protos/2.jpg" class="glightbox gallery-thumb aspect-square" data-gallery="gallery2026">
+          <img src="img/protos/2.jpg" alt="Wolf's Head" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0zm-2 0a4 4 0 11-8 0"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 8v6M8 11h6"/></svg></div>
+        </a>
+
+        <!-- Row 2: three squares -->
+        <a href="img/protos/3.jpg" class="glightbox gallery-thumb aspect-square" data-gallery="gallery2026">
+          <img src="img/protos/3.jpg" alt="Wolf's Head" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0zm-2 0a4 4 0 11-8 0"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 8v6M8 11h6"/></svg></div>
+        </a>
+        <a href="img/protos/4.jpg" class="glightbox gallery-thumb aspect-square" data-gallery="gallery2026">
+          <img src="img/protos/4.jpg" alt="Wolf's Head" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0zm-2 0a4 4 0 11-8 0"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 8v6M8 11h6"/></svg></div>
+        </a>
+        <a href="img/protos/5.jpg" class="glightbox gallery-thumb aspect-square" data-gallery="gallery2026">
+          <img src="img/protos/5.jpg" alt="Wolf's Head" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0zm-2 0a4 4 0 11-8 0"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 8v6M8 11h6"/></svg></div>
+        </a>
+
+        <!-- Row 3: square + wide -->
+        <a href="img/protos/6.jpg" class="glightbox gallery-thumb aspect-square" data-gallery="gallery2026">
+          <img src="img/protos/6.jpg" alt="Wolf's Head" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0zm-2 0a4 4 0 11-8 0"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 8v6M8 11h6"/></svg></div>
+        </a>
+        <a href="img/protos/7.jpg" class="glightbox gallery-thumb col-span-2 aspect-[2/1]" data-gallery="gallery2026">
+          <img src="img/protos/7.jpg" alt="Wolf's Head" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0zm-2 0a4 4 0 11-8 0"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 8v6M8 11h6"/></svg></div>
+        </a>
+
+        <!-- Row 4: three squares -->
+        <a href="img/protos/8.jpg" class="glightbox gallery-thumb aspect-square" data-gallery="gallery2026">
+          <img src="img/protos/8.jpg" alt="Wolf's Head" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0zm-2 0a4 4 0 11-8 0"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 8v6M8 11h6"/></svg></div>
+        </a>
+        <a href="img/protos/9.jpg" class="glightbox gallery-thumb aspect-square" data-gallery="gallery2026">
+          <img src="img/protos/9.jpg" alt="Wolf's Head" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0zm-2 0a4 4 0 11-8 0"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 8v6M8 11h6"/></svg></div>
+        </a>
+        <a href="img/protos/10.jpg" class="glightbox gallery-thumb aspect-square" data-gallery="gallery2026">
+          <img src="img/protos/10.jpg" alt="Wolf's Head" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0zm-2 0a4 4 0 11-8 0"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 8v6M8 11h6"/></svg></div>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -285,6 +329,11 @@
 
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+  </script>
 
 </body>
 </html>
