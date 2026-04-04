@@ -38,21 +38,22 @@ body {
 }
 
 .hero-bg {
-  max-width: 2560px;
-  margin: 0 auto;
-  aspect-ratio: 3 / 2;
-  background-image:
-    linear-gradient(to bottom, transparent 60%, var(--wine-dark) 100%),
-    url('./img/hero.webp');
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px 48px;
+  background-image: url('./img/hero-bg.jpg');
   background-size: cover;
-  background-position: center top;
+  background-position: center;
 }
 
-@media (min-width: 768px) {
-  .hero-bg {
-    aspect-ratio: auto;
-    min-height: 100vh;
-  }
+.hero-text img {
+  display: block;
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 120px);
+  width: auto;
+  height: auto;
 }
 
 .divider-ornament {
