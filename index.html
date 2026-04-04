@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="text-gray-200">
+<body class="text-gray-800">
 
   <!-- ═══════════════════════════════════════════
        NAVIGATION
@@ -16,7 +16,7 @@
   <nav class="nav-sticky fixed top-0 left-0 right-0 z-50">
     <div class="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
       <span class="font-cinzel font-bold text-gold tracking-widest text-sm uppercase">Wolf's Head 2026</span>
-      <div class="hidden md:flex items-center gap-8 text-xs tracking-widest uppercase font-cinzel text-gray-400">
+      <div class="hidden md:flex items-center gap-8 text-xs tracking-widest uppercase font-cinzel text-gray-300">
         <a href="#about" class="hover:text-gold transition-colors">About</a>
         <a href="#nominations" class="hover:text-gold transition-colors">Nominations</a>
         <a href="#register" class="hover:text-gold transition-colors">Register</a>
@@ -42,26 +42,26 @@
   <!-- ═══════════════════════════════════════════
        KEY INFO BAND
   ═══════════════════════════════════════════ -->
-  <section class="py-12 px-6 bg-black/40 border-b border-gold/10">
+  <section class="py-12 px-6 bg-wine">
     <div class="max-w-4xl mx-auto">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div>
-          <div class="text-gold/50 text-xs font-cinzel tracking-widest uppercase mb-2">When</div>
+          <div class="text-white/50 text-xs font-cinzel tracking-widest uppercase mb-2">When</div>
           <div class="font-cinzel text-white font-semibold text-lg leading-tight">July 18–19</div>
-          <div class="text-gray-500 text-xs mt-1">2026</div>
+          <div class="text-white/40 text-xs mt-1">2026</div>
         </div>
         <div>
-          <div class="text-gold/50 text-xs font-cinzel tracking-widest uppercase mb-2">Where</div>
+          <div class="text-white/50 text-xs font-cinzel tracking-widest uppercase mb-2">Where</div>
           <div class="font-cinzel text-white font-semibold text-lg leading-tight">Tbilisi</div>
-          <div class="text-gray-500 text-xs mt-1">Georgia</div>
+          <div class="text-white/40 text-xs mt-1">Georgia</div>
         </div>
         <div>
-          <div class="text-gold/50 text-xs font-cinzel tracking-widest uppercase mb-2">Weapons</div>
+          <div class="text-white/50 text-xs font-cinzel tracking-widest uppercase mb-2">Weapons</div>
           <div class="font-cinzel text-white font-semibold text-lg leading-tight">Longsword</div>
           <div class="font-cinzel text-white font-semibold text-lg leading-tight">Saber</div>
         </div>
         <div>
-          <div class="text-gold/50 text-xs font-cinzel tracking-widest uppercase mb-2">Categories</div>
+          <div class="text-white/50 text-xs font-cinzel tracking-widest uppercase mb-2">Categories</div>
           <div class="font-cinzel text-white font-semibold text-lg leading-tight">Open</div>
           <div class="font-cinzel text-white font-semibold text-lg leading-tight">Ladies</div>
         </div>
@@ -80,14 +80,14 @@
 
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 class="font-cinzel text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+          <h2 class="font-cinzel text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
             Wolf’s Head returns!
           </h2>
-          <p class="text-gray-400 leading-relaxed mb-4">
+          <p class="text-gray-600 leading-relaxed mb-4">
             <!-- TODO: Add tournament description -->
             We continue a tradition that has already become a landmark event for the Georgian HEMA community. Once again, the tournament will bring together fencers ready to compete on the field in intense, fair competition.
           </p>
-          <p class="text-gray-400 leading-relaxed">
+          <p class="text-gray-600 leading-relaxed">
             <!-- TODO: Add history / additional context -->
             Prepare for strong opponents and an atmosphere where every bout is a challenge.
           </p>
@@ -107,7 +107,7 @@
   <!-- ═══════════════════════════════════════════
        NOMINATIONS
   ═══════════════════════════════════════════ -->
-  <section id="nominations" class="py-24 px-6 bg-black/30">
+  <section id="nominations" class="py-24 px-6 bg-gray-50">
     <div class="max-w-5xl mx-auto">
       <div class="divider-ornament mb-4">
         <span class="section-title text-sm tracking-[0.3em]">Nominations</span>
@@ -122,12 +122,12 @@
         <div class="grid sm:grid-cols-2 gap-4">
 
           <div class="nomination-card rounded-lg p-6">
-            <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Open</h3>
+            <h3 class="font-cinzel text-lg font-semibold text-gray-900 mb-2">Open</h3>
             <p class="text-gray-500 text-sm leading-relaxed">Open category. Any school or system.</p>
           </div>
 
           <div class="nomination-card rounded-lg p-6">
-            <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Ladies</h3>
+            <h3 class="font-cinzel text-lg font-semibold text-gray-900 mb-2">Ladies</h3>
             <p class="text-gray-500 text-sm leading-relaxed">Women's category.</p>
           </div>
 
@@ -136,7 +136,7 @@
         <!-- Qualifier note -->
         <div class="mt-4 px-5 py-4 border border-gold/15 bg-gold/5 rounded-lg text-sm text-gray-500 leading-relaxed">
           <span class="text-gold/70 font-cinzel text-xs tracking-widest uppercase">Note · </span>
-          In the Longsword division, the pool stage serves as a qualifier. Based on results, participants will be split into two leagues — <span class="text-gray-300">Advanced</span> and <span class="text-gray-300">Base</span> — each continuing into its own playoff bracket.
+          In the Longsword division, the pool stage serves as a qualifier. Based on results, participants will be split into two leagues — <span class="text-gray-800">Advanced</span> and <span class="text-gray-800">Base</span> — each continuing into its own playoff bracket.
         </div>
       </div>
 
@@ -146,12 +146,12 @@
         <div class="grid sm:grid-cols-2 gap-4">
 
           <div class="nomination-card rounded-lg p-6">
-            <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Open</h3>
+            <h3 class="font-cinzel text-lg font-semibold text-gray-900 mb-2">Open</h3>
             <p class="text-gray-500 text-sm leading-relaxed">Open category. Any school or system.</p>
           </div>
 
           <div class="nomination-card rounded-lg p-6">
-            <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Ladies</h3>
+            <h3 class="font-cinzel text-lg font-semibold text-gray-900 mb-2">Ladies</h3>
             <p class="text-gray-500 text-sm leading-relaxed">Women's category.</p>
           </div>
 
@@ -191,19 +191,19 @@
   <!-- ═══════════════════════════════════════════
        REGISTRATION
   ═══════════════════════════════════════════ -->
-  <section id="register" class="py-24 px-6 bg-black/30">
+  <section id="register" class="py-24 px-6 bg-gray-50">
     <div class="max-w-2xl mx-auto text-center">
       <div class="divider-ornament mb-12">
         <span class="section-title text-sm tracking-[0.3em]">Registration</span>
       </div>
 
-      <h2 class="font-cinzel text-3xl md:text-4xl font-bold text-white mb-4">
+      <h2 class="font-cinzel text-3xl md:text-4xl font-bold text-gray-900 mb-4">
         Join the Tournament
       </h2>
-      <p class="text-gray-500 mb-2">
+      <p class="text-gray-600 mb-2">
         Registration is handled via <span class="text-gold">HEMAScores</span>.
       </p>
-      <p class="text-gray-600 text-sm mb-10">
+      <p class="text-gray-500 text-sm mb-10">
         <!-- TODO: Add registration deadline / entry fee -->
         Registration deadline: TBD · Entry fee: TBD
       </p>
@@ -216,7 +216,7 @@
         Register on HEMAScores
       </a>
 
-      <p class="text-gray-700 text-xs mt-6">
+      <p class="text-gray-500 text-xs mt-6">
         Questions? Reach us on
         <a href="#" class="text-gold/70 hover:text-gold underline">Facebook</a>
         or
@@ -236,12 +236,12 @@
 
       <div class="grid md:grid-cols-2 gap-10 items-start">
         <div>
-          <h2 class="font-cinzel text-2xl font-bold text-white mb-4">Getting There</h2>
+          <h2 class="font-cinzel text-2xl font-bold text-gray-900 mb-4">Getting There</h2>
           <p class="text-gold font-cinzel text-sm mb-1">
             <!-- TODO: Venue name -->
             Venue Name
           </p>
-          <p class="text-gray-400 mb-6">
+          <p class="text-gray-500 mb-6">
             <!-- TODO: Address TBD -->
             Address to be confirmed
           </p>
@@ -260,8 +260,8 @@
         </div>
 
         <!-- Map placeholder -->
-        <div class="aspect-video bg-gray-900 border border-gold/20 rounded flex items-center justify-center">
-          <div class="text-center text-gray-700">
+        <div class="aspect-video bg-gray-100 border border-gold/20 rounded flex items-center justify-center">
+          <div class="text-center text-gray-400">
             <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-2 w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
             <span class="text-xs font-cinzel tracking-widest uppercase">Map / Embed</span>
           </div>
@@ -273,13 +273,13 @@
   <!-- ═══════════════════════════════════════════
        FOOTER / SOCIAL
   ═══════════════════════════════════════════ -->
-  <footer class="border-t border-gold/20 py-12 px-6">
+  <footer class="bg-wine-dark border-t border-gold/20 py-12 px-6">
     <div class="max-w-5xl mx-auto">
       <div class="flex flex-col md:flex-row items-center justify-between gap-8">
 
         <div class="text-center md:text-left">
           <div class="font-cinzel font-black text-2xl text-gold tracking-widest mb-1">WOLF'S HEAD</div>
-          <div class="text-xs text-gray-600 tracking-widest uppercase">HEMA Tournament 2026</div>
+          <div class="text-xs text-gray-400 tracking-widest uppercase">HEMA Tournament 2026</div>
         </div>
 
         <!-- Social links -->
@@ -300,7 +300,7 @@
 
       </div>
 
-      <div class="mt-10 pt-6 border-t border-gold/10 text-center text-xs text-gray-700 font-cinzel tracking-widest">
+      <div class="mt-10 pt-6 border-t border-gold/10 text-center text-xs text-gray-600 font-cinzel tracking-widest">
         © 2026 Wolf's Head Tournament. All rights reserved.
       </div>
     </div>

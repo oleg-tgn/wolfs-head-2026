@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 :root {
-  --gold: #c9a84c;
-  --gold-light: #e8c97a;
-  --dark-bg: #0d0d0d;
+  --gold: #c9334d;
+  --gold-light: #e8566e;
+  --dark-bg: #f5f3f3;
+  --wine: #3d0f1a;
+  --wine-dark: #150810;
 }
 
 body {
   background-color: var(--dark-bg);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .font-cinzel {
-  font-family: 'Cinzel', serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .text-gold {
@@ -27,20 +29,25 @@ body {
   background-color: var(--gold);
 }
 
+.bg-wine {
+  background-color: var(--wine);
+}
+
+.bg-wine-dark {
+  background-color: var(--wine-dark);
+}
+
 .hero-bg {
   max-width: 2560px;
   margin: 0 auto;
-  /* mobile: height based on image aspect ratio */
   aspect-ratio: 3 / 2;
   background-image:
-    linear-gradient(to bottom, transparent 65%, rgba(13,13,13,1) 100%),
-    linear-gradient(to right, rgba(13,13,13,1) 0%, transparent 6%, transparent 94%, rgba(13,13,13,1) 100%),
+    linear-gradient(to bottom, transparent 60%, var(--wine-dark) 100%),
     url('./img/hero.webp');
   background-size: cover;
   background-position: center top;
 }
 
-/* desktop: full viewport height */
 @media (min-width: 768px) {
   .hero-bg {
     aspect-ratio: auto;
@@ -63,20 +70,20 @@ body {
 }
 
 .nomination-card {
-  border: 1px solid rgba(201, 168, 76, 0.25);
-  background: rgba(201, 168, 76, 0.04);
+  border: 1px solid rgba(201, 51, 77, 0.2);
+  background: rgba(201, 51, 77, 0.04);
   transition: border-color 0.3s, background 0.3s;
 }
 .nomination-card:hover {
-  border-color: rgba(201, 168, 76, 0.6);
-  background: rgba(201, 168, 76, 0.08);
+  border-color: rgba(201, 51, 77, 0.5);
+  background: rgba(201, 51, 77, 0.08);
 }
 
 .btn-gold {
   background-color: var(--gold);
-  color: #0d0d0d;
-  font-family: 'Cinzel', serif;
-  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   letter-spacing: 0.05em;
   border: none;
   transition: background-color 0.2s, transform 0.1s;
@@ -92,19 +99,19 @@ body {
 .btn-outline-gold {
   border: 1px solid var(--gold);
   color: var(--gold);
-  font-family: 'Cinzel', serif;
+  font-family: 'Oswald', sans-serif;
   background: transparent;
   letter-spacing: 0.05em;
   transition: background 0.2s, color 0.2s;
 }
 .btn-outline-gold:hover {
-  background: rgba(201, 168, 76, 0.12);
+  background: rgba(201, 51, 77, 0.1);
   color: var(--gold-light);
 }
 
 .section-title {
-  font-family: 'Cinzel', serif;
-  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   color: var(--gold);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -112,18 +119,8 @@ body {
 
 .nav-sticky {
   backdrop-filter: blur(12px);
-  background: rgba(13, 13, 13, 0.85);
-  border-bottom: 1px solid rgba(201, 168, 76, 0.2);
-}
-
-/* Subtle texture overlay */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.015'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 0;
+  background: rgba(21, 8, 16, 0.95);
+  border-bottom: 1px solid rgba(201, 51, 77, 0.2);
 }
 
 section, nav, footer {
