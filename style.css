@@ -27,25 +27,25 @@ body {
   background-color: var(--gold);
 }
 
-.hero-img-wrap {
-  position: relative;
-  max-width: 1920px;
+.hero-bg {
+  max-width: 2560px;
   margin: 0 auto;
-}
-
-.hero-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero-fade {
-  position: absolute;
-  inset: 0;
-  background:
+  /* mobile: height based on image aspect ratio */
+  aspect-ratio: 3 / 2;
+  background-image:
     linear-gradient(to bottom, transparent 65%, rgba(13,13,13,1) 100%),
-    linear-gradient(to right,  rgba(13,13,13,1) 0%, transparent 6%, transparent 94%, rgba(13,13,13,1) 100%);
-  pointer-events: none;
+    linear-gradient(to right, rgba(13,13,13,1) 0%, transparent 6%, transparent 94%, rgba(13,13,13,1) 100%),
+    url('./img/hero.webp');
+  background-size: cover;
+  background-position: center top;
+}
+
+/* desktop: full viewport height */
+@media (min-width: 768px) {
+  .hero-bg {
+    aspect-ratio: auto;
+    min-height: 100vh;
+  }
 }
 
 .divider-ornament {
