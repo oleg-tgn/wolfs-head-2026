@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wolf's Head 2026 — HEMA Tournament</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="text-gray-200">
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="nav-sticky fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+      <span class="font-cinzel font-bold text-gold tracking-widest text-sm uppercase">Wolf's Head 2026</span>
+      <div class="hidden md:flex items-center gap-8 text-xs tracking-widest uppercase font-cinzel text-gray-400">
+        <a href="#about" class="hover:text-gold transition-colors">About</a>
+        <a href="#nominations" class="hover:text-gold transition-colors">Nominations</a>
+        <a href="#register" class="hover:text-gold transition-colors">Register</a>
+        <a href="#venue" class="hover:text-gold transition-colors">Venue</a>
+      </div>
+      <a href="#register" class="btn btn-sm btn-gold font-cinzel text-xs tracking-widest">Register</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="relative pt-14">
+    <div class="hero-img-wrap">
+      <img src="./img/hero.webp" alt="Wolf's Head 2026" class="hero-img" />
+      <div class="hero-fade"></div>
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gold/40">
+        <span class="text-xs tracking-widest uppercase font-cinzel">Scroll</span>
+        <svg width="16" height="24" viewBox="0 0 16 24" fill="none" class="animate-bounce">
+          <path d="M8 0v20M2 14l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section id="about" class="py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="divider-ornament mb-12">
+        <span class="section-title text-sm tracking-[0.3em]">About</span>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-cinzel text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+            Wolf’s Head returns!
+          </h2>
+          <p class="text-gray-400 leading-relaxed mb-4">
+            <!-- TODO: Add tournament description -->
+            We continue a tradition that has already become a landmark event for the Georgian HEMA community. Once again, the tournament will bring together fencers ready to compete on the field in intense, fair competition.
+          </p>
+          <p class="text-gray-400 leading-relaxed">
+            <!-- TODO: Add history / additional context -->
+            Prepare for strong opponents and an atmosphere where every bout is a challenge.
+          </p>
+        </div>
+
+        <!-- Photo placeholder -->
+        <div class="aspect-[4/3] bg-gray-900 border border-gold/20 rounded flex items-center justify-center">
+          <div class="text-center text-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-2 w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            <span class="text-xs font-cinzel tracking-widest uppercase">Tournament Photo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       NOMINATIONS
+  ═══════════════════════════════════════════ -->
+  <section id="nominations" class="py-24 px-6 bg-black/30">
+    <div class="max-w-5xl mx-auto">
+      <div class="divider-ornament mb-4">
+        <span class="section-title text-sm tracking-[0.3em]">Nominations</span>
+      </div>
+      <p class="text-center text-gray-500 text-sm mb-14">
+        <!-- TODO: Add subtitle / note about nominations -->
+      </p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <div class="nomination-card rounded-lg p-6">
+          <div class="text-gold text-xs font-cinzel tracking-widest uppercase mb-3">Longsword</div>
+          <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Longsword Open</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Open category. Any school or system.</p>
+          <div class="mt-4 pt-4 border-t border-gold/10 flex gap-4 text-xs text-gray-600">
+            <span><!-- TODO: max participants --></span>
+          </div>
+        </div>
+
+        <div class="nomination-card rounded-lg p-6">
+          <div class="text-gold text-xs font-cinzel tracking-widest uppercase mb-3">Rapier</div>
+          <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Rapier &amp; Dagger</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Rapier and dagger. Italian / Spanish school.</p>
+          <div class="mt-4 pt-4 border-t border-gold/10 text-xs text-gray-600"></div>
+        </div>
+
+        <div class="nomination-card rounded-lg p-6">
+          <div class="text-gold text-xs font-cinzel tracking-widest uppercase mb-3">Buckler</div>
+          <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Sword &amp; Buckler</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">I.33 and related systems.</p>
+          <div class="mt-4 pt-4 border-t border-gold/10 text-xs text-gray-600"></div>
+        </div>
+
+        <div class="nomination-card rounded-lg p-6">
+          <div class="text-gold text-xs font-cinzel tracking-widest uppercase mb-3">Sabre</div>
+          <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Cutting Sabre</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Sabre, cutting style. Any school.</p>
+          <div class="mt-4 pt-4 border-t border-gold/10 text-xs text-gray-600"></div>
+        </div>
+
+        <div class="nomination-card rounded-lg p-6">
+          <div class="text-gold text-xs font-cinzel tracking-widest uppercase mb-3">Women's</div>
+          <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Women's Open</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Open women's category. Weapon of choice.</p>
+          <div class="mt-4 pt-4 border-t border-gold/10 text-xs text-gray-600"></div>
+        </div>
+
+        <!-- Placeholder for additional nomination -->
+        <div class="nomination-card rounded-lg p-6 border-dashed opacity-50">
+          <div class="text-gold/40 text-xs font-cinzel tracking-widest uppercase mb-3">TBD</div>
+          <h3 class="font-cinzel text-lg font-semibold text-white/50 mb-2">+ More to come</h3>
+          <p class="text-gray-600 text-sm">Details coming soon</p>
+        </div>
+
+      </div>
+
+      <!-- Rules link -->
+      <div class="text-center mt-12">
+        <a href="#" class="btn btn-outline-gold btn-sm px-8 text-xs tracking-widest">
+          <!-- TODO: Link to rules document -->
+          Tournament Rules →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PHOTO GALLERY (placeholder)
+  ═══════════════════════════════════════════ -->
+  <section id="gallery" class="py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="divider-ornament mb-14">
+        <span class="section-title text-sm tracking-[0.3em]">Gallery</span>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+        <!-- TODO: Replace with real photos -->
+        <div class="aspect-square bg-gray-900 border border-gold/10 rounded flex items-center justify-center text-gray-800 text-xs font-cinzel">photo 1</div>
+        <div class="aspect-square bg-gray-900 border border-gold/10 rounded flex items-center justify-center text-gray-800 text-xs font-cinzel">photo 2</div>
+        <div class="aspect-square bg-gray-900 border border-gold/10 rounded flex items-center justify-center text-gray-800 text-xs font-cinzel">photo 3</div>
+        <div class="aspect-[2/1] bg-gray-900 border border-gold/10 rounded col-span-2 flex items-center justify-center text-gray-800 text-xs font-cinzel">photo 4 — wide</div>
+        <div class="aspect-square bg-gray-900 border border-gold/10 rounded flex items-center justify-center text-gray-800 text-xs font-cinzel">photo 5</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       REGISTRATION
+  ═══════════════════════════════════════════ -->
+  <section id="register" class="py-24 px-6 bg-black/30">
+    <div class="max-w-2xl mx-auto text-center">
+      <div class="divider-ornament mb-12">
+        <span class="section-title text-sm tracking-[0.3em]">Registration</span>
+      </div>
+
+      <h2 class="font-cinzel text-3xl md:text-4xl font-bold text-white mb-4">
+        Join the Tournament
+      </h2>
+      <p class="text-gray-500 mb-2">
+        Registration is handled via <span class="text-gold">HEMAScores</span>.
+      </p>
+      <p class="text-gray-600 text-sm mb-10">
+        <!-- TODO: Add registration deadline / entry fee -->
+        Registration deadline: TBD · Entry fee: TBD
+      </p>
+
+      <a
+        href="#"
+        class="btn btn-gold btn-lg px-14 text-sm tracking-widest mb-6 block sm:inline-block"
+      >
+        <!-- TODO: Link to HEMAScores registration page -->
+        Register on HEMAScores
+      </a>
+
+      <p class="text-gray-700 text-xs mt-6">
+        Questions? Reach us on
+        <a href="#" class="text-gold/70 hover:text-gold underline">Facebook</a>
+        or
+        <a href="#" class="text-gold/70 hover:text-gold underline">Instagram</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       VENUE / HOW TO GET THERE
+  ═══════════════════════════════════════════ -->
+  <section id="venue" class="py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="divider-ornament mb-14">
+        <span class="section-title text-sm tracking-[0.3em]">Venue</span>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="font-cinzel text-2xl font-bold text-white mb-4">Getting There</h2>
+          <p class="text-gold font-cinzel text-sm mb-1">
+            <!-- TODO: Venue name -->
+            Venue Name
+          </p>
+          <p class="text-gray-400 mb-6">
+            <!-- TODO: Address TBD -->
+            Address to be confirmed
+          </p>
+
+          <div class="space-y-4 text-sm text-gray-500">
+            <div class="flex gap-3">
+              <span class="text-gold mt-0.5">→</span>
+              <span><!-- TODO: Transport, metro, parking --></span>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-outline-gold btn-sm mt-8 text-xs tracking-widest px-6">
+            <!-- TODO: Link to maps -->
+            Open in Maps
+          </a>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="aspect-video bg-gray-900 border border-gold/20 rounded flex items-center justify-center">
+          <div class="text-center text-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-2 w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span class="text-xs font-cinzel tracking-widest uppercase">Map / Embed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER / SOCIAL
+  ═══════════════════════════════════════════ -->
+  <footer class="border-t border-gold/20 py-12 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+
+        <div class="text-center md:text-left">
+          <div class="font-cinzel font-black text-2xl text-gold tracking-widest mb-1">WOLF'S HEAD</div>
+          <div class="text-xs text-gray-600 tracking-widest uppercase">HEMA Tournament 2026</div>
+        </div>
+
+        <!-- Social links -->
+        <div class="flex gap-4">
+          <a href="#" class="btn btn-outline-gold btn-sm text-xs tracking-widest px-5">
+            <!-- TODO: Facebook link -->
+            Facebook
+          </a>
+          <a href="#" class="btn btn-outline-gold btn-sm text-xs tracking-widest px-5">
+            <!-- TODO: Instagram link -->
+            Instagram
+          </a>
+          <a href="#" class="btn btn-outline-gold btn-sm text-xs tracking-widest px-5">
+            <!-- TODO: Rules link -->
+            Rules
+          </a>
+        </div>
+
+      </div>
+
+      <div class="mt-10 pt-6 border-t border-gold/10 text-center text-xs text-gray-700 font-cinzel tracking-widest">
+        © 2026 Wolf's Head Tournament. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
