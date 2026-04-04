@@ -147,6 +147,28 @@ section, nav, footer {
 }
 
 /* ── Gallery ── */
+/* Row height = 1 column width.
+   section px-6 = 1.5rem each side (3rem total).
+   gap-2 = 0.5rem. Mobile: 2 cols → 1 gap. Desktop: 3 cols → 2 gaps.
+   When viewport ≥ 1072px the max-w-5xl (64rem) kicks in → fixed row height. */
+.gallery-grid {
+  /* mobile 2-col: (100vw - 3rem padding - 0.5rem gap) / 2 */
+  grid-auto-rows: calc((100vw - 3.5rem) / 2);
+}
+@media (min-width: 768px) {
+  /* desktop 3-col: (100vw - 3rem padding - 1rem gaps) / 3 */
+  .gallery-grid {
+    grid-auto-rows: calc((100vw - 4rem) / 3);
+  }
+}
+@media (min-width: 1072px) {
+  /* max-w-5xl = 64rem caps the grid width */
+  .gallery-grid {
+    grid-auto-rows: calc((64rem - 1rem) / 3);
+  }
+}
+
+
 .gallery-thumb {
   display: block;
   position: relative;
