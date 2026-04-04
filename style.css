@@ -127,3 +127,19 @@ section, nav, footer {
   position: relative;
   z-index: 1;
 }
+
+.social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.social-icon-btn:hover {
+  background: rgba(201, 51, 77, 0.15);
+  color: var(--gold-light);
+}
