@@ -40,6 +40,36 @@
   </section>
 
   <!-- ═══════════════════════════════════════════
+       KEY INFO BAND
+  ═══════════════════════════════════════════ -->
+  <section class="py-12 px-6 bg-black/40 border-b border-gold/10">
+    <div class="max-w-4xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-gold/50 text-xs font-cinzel tracking-widest uppercase mb-2">When</div>
+          <div class="font-cinzel text-white font-semibold text-lg leading-tight">July 18–19</div>
+          <div class="text-gray-500 text-xs mt-1">2026</div>
+        </div>
+        <div>
+          <div class="text-gold/50 text-xs font-cinzel tracking-widest uppercase mb-2">Where</div>
+          <div class="font-cinzel text-white font-semibold text-lg leading-tight">Tbilisi</div>
+          <div class="text-gray-500 text-xs mt-1">Georgia</div>
+        </div>
+        <div>
+          <div class="text-gold/50 text-xs font-cinzel tracking-widest uppercase mb-2">Weapons</div>
+          <div class="font-cinzel text-white font-semibold text-lg leading-tight">Longsword</div>
+          <div class="font-cinzel text-white font-semibold text-lg leading-tight">Saber</div>
+        </div>
+        <div>
+          <div class="text-gold/50 text-xs font-cinzel tracking-widest uppercase mb-2">Categories</div>
+          <div class="font-cinzel text-white font-semibold text-lg leading-tight">Open</div>
+          <div class="font-cinzel text-white font-semibold text-lg leading-tight">Ladies</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
        ABOUT
   ═══════════════════════════════════════════ -->
   <section id="about" class="py-24 px-6">
@@ -86,52 +116,46 @@
         <!-- TODO: Add subtitle / note about nominations -->
       </p>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Longsword -->
+      <div class="mb-10">
+        <div class="text-gold/50 text-xs font-cinzel tracking-[0.3em] uppercase mb-4">Longsword</div>
+        <div class="grid sm:grid-cols-2 gap-4">
 
-        <div class="nomination-card rounded-lg p-6">
-          <div class="text-gold text-xs font-cinzel tracking-widest uppercase mb-3">Longsword</div>
-          <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Longsword Open</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Open category. Any school or system.</p>
-          <div class="mt-4 pt-4 border-t border-gold/10 flex gap-4 text-xs text-gray-600">
-            <span><!-- TODO: max participants --></span>
+          <div class="nomination-card rounded-lg p-6">
+            <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Open</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Open category. Any school or system.</p>
           </div>
+
+          <div class="nomination-card rounded-lg p-6">
+            <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Ladies</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Women's category.</p>
+          </div>
+
         </div>
 
-        <div class="nomination-card rounded-lg p-6">
-          <div class="text-gold text-xs font-cinzel tracking-widest uppercase mb-3">Rapier</div>
-          <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Rapier &amp; Dagger</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Rapier and dagger. Italian / Spanish school.</p>
-          <div class="mt-4 pt-4 border-t border-gold/10 text-xs text-gray-600"></div>
+        <!-- Qualifier note -->
+        <div class="mt-4 px-5 py-4 border border-gold/15 bg-gold/5 rounded-lg text-sm text-gray-500 leading-relaxed">
+          <span class="text-gold/70 font-cinzel text-xs tracking-widest uppercase">Note · </span>
+          In the Longsword division, the pool stage serves as a qualifier. Based on results, participants will be split into two leagues — <span class="text-gray-300">Advanced</span> and <span class="text-gray-300">Base</span> — each continuing into its own playoff bracket.
         </div>
+      </div>
 
-        <div class="nomination-card rounded-lg p-6">
-          <div class="text-gold text-xs font-cinzel tracking-widest uppercase mb-3">Buckler</div>
-          <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Sword &amp; Buckler</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">I.33 and related systems.</p>
-          <div class="mt-4 pt-4 border-t border-gold/10 text-xs text-gray-600"></div>
+      <!-- Saber -->
+      <div>
+        <div class="text-gold/50 text-xs font-cinzel tracking-[0.3em] uppercase mb-4">Saber</div>
+        <div class="grid sm:grid-cols-2 gap-4">
+
+          <div class="nomination-card rounded-lg p-6">
+            <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Open</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Open category. Any school or system.</p>
+          </div>
+
+          <div class="nomination-card rounded-lg p-6">
+            <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Ladies</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Women's category.</p>
+          </div>
+
         </div>
-
-        <div class="nomination-card rounded-lg p-6">
-          <div class="text-gold text-xs font-cinzel tracking-widest uppercase mb-3">Sabre</div>
-          <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Cutting Sabre</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Sabre, cutting style. Any school.</p>
-          <div class="mt-4 pt-4 border-t border-gold/10 text-xs text-gray-600"></div>
-        </div>
-
-        <div class="nomination-card rounded-lg p-6">
-          <div class="text-gold text-xs font-cinzel tracking-widest uppercase mb-3">Women's</div>
-          <h3 class="font-cinzel text-lg font-semibold text-white mb-2">Women's Open</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Open women's category. Weapon of choice.</p>
-          <div class="mt-4 pt-4 border-t border-gold/10 text-xs text-gray-600"></div>
-        </div>
-
-        <!-- Placeholder for additional nomination -->
-        <div class="nomination-card rounded-lg p-6 border-dashed opacity-50">
-          <div class="text-gold/40 text-xs font-cinzel tracking-widest uppercase mb-3">TBD</div>
-          <h3 class="font-cinzel text-lg font-semibold text-white/50 mb-2">+ More to come</h3>
-          <p class="text-gray-600 text-sm">Details coming soon</p>
-        </div>
-
       </div>
 
       <!-- Rules link -->
