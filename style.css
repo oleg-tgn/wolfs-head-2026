@@ -164,6 +164,9 @@ body {
 .nav-link:hover {
   color: var(--crimson);
 }
+.nav-link.active {
+  color: var(--crimson);
+}
 /* Register CTA inside list — hidden on desktop */
 .nav-mobile-cta { display: none; }
 
