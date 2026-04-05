@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome — Wolf's Head 2026</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="text-gray-800">
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="nav-sticky fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+      <a href="index.html" class="font-cinzel font-bold text-gold tracking-widest text-sm uppercase">Wolf's Head 2026</a>
+      <div class="hidden md:flex items-center gap-8 text-xs tracking-widest uppercase font-cinzel text-gray-300">
+        <a href="index.html#about" class="hover:text-gold transition-colors">About</a>
+        <a href="index.html#nominations" class="hover:text-gold transition-colors">Nominations</a>
+        <a href="index.html#register" class="hover:text-gold transition-colors">Register</a>
+        <a href="index.html#gallery" class="hover:text-gold transition-colors">Gallery</a>
+        <a href="index.html#address" class="hover:text-gold transition-colors">Address</a>
+        <a href="welcome.html" class="text-gold transition-colors">Welcome</a>
+      </div>
+      <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold font-cinzel text-xs tracking-widest">Register</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       PAGE HEADER
+  ═══════════════════════════════════════════ -->
+  <!-- <section class="pt-32 pb-16 px-6 text-center">
+    <h1 class="font-cinzel text-4xl md:text-5xl font-black text-gold tracking-widest mb-4">Welcome</h1>
+    <p class="text-gray-300 text-sm tracking-widest uppercase font-cinzel">Georgia · Tbilisi · St. George's HEMA Club</p>
+  </section> -->
+
+  <!-- ═══════════════════════════════════════════
+       WELCOME TO GEORGIA
+  ═══════════════════════════════════════════ -->
+  <section id="georgia" class="py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="divider-ornament mb-14">
+        <span class="section-title text-sm tracking-[0.3em]">Welcome to Georgia</span>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div class="space-y-4 text-gray-600 leading-relaxed">
+          <p>Georgia is located on the eastern shore of the Black Sea, in the geographical area known as the Caucasus — a mountainous country covering most of the Caucasus Mountain Range. In general, the country has 12 climate zones, including deserts and glaciers.</p>          
+          <p>Georgia has several UNESCO World Heritage sites including towns such as <strong>Mtskheta</strong> (ancient capital) and <strong>Ushguli</strong> (a medieval tower city in Svaneti).</p>
+          <p>It is one of the best destinations for hikers, gastronomy lovers, and fans of traditional dance and polyphonic music.</p>
+          <p>Georgia is considered the <strong>cradle of wine</strong> — with an 8,000-year-old winemaking tradition. The country also holds the world's oldest thread (34,000 years old) and oldest golden mines (6,000 years old).</p>
+        </div>
+
+        <div class="aspect-[4/3] rounded overflow-hidden">
+          <!-- TODO: Replace with a photo of Georgia landscape -->
+          <img src="./img/georgia.png" alt="Georgia" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       WELCOME TO TBILISI
+  ═══════════════════════════════════════════ -->
+  <section id="tbilisi" class="py-24 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <div class="divider-ornament mb-14">
+        <span class="section-title text-sm tracking-[0.3em]">Welcome to Tbilisi</span>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+
+        <div class="aspect-[4/3] rounded overflow-hidden md:order-first order-last">
+          <!-- TODO: Replace with a photo of Tbilisi -->
+          <img src="./img/tbilisi.webp" alt="Tbilisi" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="space-y-4 text-gray-600 leading-relaxed">
+          <p>The name of the city comes from the Georgian word <em>"Tbili"</em>, meaning <strong>warm</strong>. The city's citadel was established in the 3rd century AD.</p>
+          <p>Tbilisi is known for its narrow streets, balconies, and ancient buildings. It is a culinary muse — with <strong>Khinkali</strong> at the top of the list.</p>
+
+          <div class="border-l-2 border-gold/40 pl-4 space-y-2 text-sm">
+            <p><span class="text-gold font-semibold">Hotels / hostels</span> — 20–50 EUR. We recommend staying near the Old Town.</p>
+            <p><span class="text-gold font-semibold">Transport</span> — metro and buses are the main means of movement.</p>
+            <p><span class="text-gold font-semibold">Museums</span> close around 18:00.</p>
+            <p><span class="text-gold font-semibold">Most restaurants</span> close around 23:00.</p>
+            <p><span class="text-gold font-semibold">Public transport</span> runs until ~23:00; metro until midnight.</p>
+            <p><span class="text-gold font-semibold">Some pubs</span> operate till 02:00–03:00.</p>
+          </div>
+
+          <p class="text-gray-500">Oh, and one fine mug of beer costs around 2–3 EUR — and you can find it almost everywhere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ST. GEORGE'S HEMA CLUB
+  ═══════════════════════════════════════════ -->
+  <section id="club" class="py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="divider-ornament mb-14">
+        <span class="section-title text-sm tracking-[0.3em]">St. George's HEMA Club</span>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-4 text-gray-600 leading-relaxed">
+          <p>The club was established 4 years ago, covering mainly Longsword and Saber directions. It has its own training compound with an arsenal of different HEMA weapons.</p>
+          <p>Fencers from St. George School have participated in many international tournaments, winning all sorts of medals — proving themselves as competitive, skilled, and fair fencers.</p>
+          <p>St. George has solid experience in hosting and organizing international HEMA tournaments.</p>
+
+          <div class="flex gap-4 pt-2">
+            <a href="https://www.facebook.com/profile.php?id=61552169678876" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-sm text-xs tracking-widest px-5">
+              Facebook
+            </a>
+            <a href="https://www.instagram.com/st.george_hema_school/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-sm text-xs tracking-widest px-5">
+              Instagram
+            </a>            
+          </div>
+        </div>
+
+        <div class="aspect-[4/3] rounded overflow-hidden">
+          <img src="./img/club_members.jpg" alt="St. George's HEMA Club" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       USEFUL INFORMATION
+  ═══════════════════════════════════════════ -->
+  <section id="info" class="py-24 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <div class="divider-ornament mb-14">
+        <span class="section-title text-sm tracking-[0.3em]">Useful Information</span>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <div>
+          <h3 class="font-cinzel text-base font-semibold text-gray-900 mb-4 tracking-wide">Transport & City Card</h3>
+          <div class="space-y-3 text-gray-600 text-sm leading-relaxed">
+            <p>Once in the city, buy a <strong>municipality card (0.8 EUR)</strong> — available at any metro station. It works on all public transport.</p>
+            <p>All info regarding fees, routes and schedules: <a href="https://ttc.com.ge/en" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline">ttc.com.ge</a></p>
+            <p>Download these apps on your phone: <strong>TTC</strong> (Tbilisi Transport Company), <strong>Bolt</strong>, <strong>WhatsApp</strong>, <strong>Telegram</strong>, and <strong>112 Emergency</strong>.</p>
+            <p>Emergency number: <strong>112</strong> (hopefully you won't need it).</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-cinzel text-base font-semibold text-gray-900 mb-4 tracking-wide">Money & Connectivity</h3>
+          <div class="space-y-3 text-gray-600 text-sm leading-relaxed">
+            <p>Official currency is <strong>GEL (Georgian Lari)</strong>. Payments in foreign currency are forbidden. Exchange windows are easily accessible throughout the city.</p>
+            <p>Card payments are accepted, but all currencies convert to GEL — depending on your bank, a percentage may apply.</p>
+            <p>Roaming, 4G internet, and mobile services are cheap. Public Wi-Fi is available in the city center and metro.</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-cinzel text-base font-semibold text-gray-900 mb-4 tracking-wide">Insurance</h3>
+          <div class="space-y-3 text-gray-600 text-sm leading-relaxed">
+            <p>Once you accept the tournament challenge (and hopefully you do!), start working on insurance paperwork.</p>
+            <p><strong>Travel insurance is mandatory.</strong> Minimum coverage: 30,000 GEL (~9,000 EUR), covering health and accidents. You can bring insurance from your country or purchase it online from Georgian providers before arrival. Most Georgian providers support communication in English and can provide documents.</p>
+            <p>Insurance companies:
+              <!-- TODO: Add links for Imedi L and TBC -->
+              <strong>Imedi L</strong>, <strong>TBC</strong>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-cinzel text-base font-semibold text-gray-900 mb-4 tracking-wide">Useful Links</h3>
+          <div class="space-y-2 text-sm">
+            <div><a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline">Wolf's Head — Hemagon</a></div>
+            <div><a href="https://www.facebook.com/groups/wolfshead.hema/" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline">Wolf's Head — Facebook Group</a></div>
+            <div><a href="https://visitgeorgia.ge/" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline">Visit Georgia</a></div>
+            <div><a href="https://georgia.travel/cities-towns/tbilisi" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline">Visit Tbilisi</a></div>
+            <div><a href="https://georgiantravelguide.com/en" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline">Georgian Travel Guide</a></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       VISA & DOCUMENTATION
+  ═══════════════════════════════════════════ -->
+  <section id="visa" class="py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="divider-ornament mb-14">
+        <span class="section-title text-sm tracking-[0.3em]">Visa & Documentation</span>
+      </div>
+
+      <div class="max-w-2xl mx-auto space-y-4 text-gray-600 leading-relaxed">
+        <p>In general, you can stay <strong>visa-free for a full year (365 days)</strong> in Georgia.</p>
+        <p>To check if your country qualifies, refer to the Ministry of Foreign Affairs website: <a href="https://www.geoconsul.gov.ge/en/HtmlPage/html/View?id=25" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline">geoconsul.gov.ge — Visa-Free Countries</a></p>
+
+        <h3 class="font-cinzel text-base font-semibold text-gray-900 pt-4 tracking-wide">Documents required</h3>
+        <ul class="list-disc list-inside space-y-1 text-sm">
+          <li>Valid passport</li>
+          <li>Travel insurance (covering health and accidents, minimum 30,000 GEL / ~9,000 EUR)</li>
+        </ul>
+
+        <p class="text-sm">If you are not a citizen of a visa-free country, please contact the Georgian authorities via <a href="https://www.geoconsul.gov.ge" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline">geoconsul.gov.ge</a> — you will be directed on how to obtain a visa. Procedures are simple; in some cases only filling an online form is required.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       HOW TO GET HERE
+  ═══════════════════════════════════════════ -->
+  <section id="airport" class="py-24 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <div class="divider-ornament mb-14">
+        <span class="section-title text-sm tracking-[0.3em]">Getting to Tbilisi</span>
+      </div>
+
+      <p class="text-center text-gray-500 text-sm mb-12">Shota Rustaveli Airport is located 12 km east of Tbilisi. There are three ways to reach the city:</p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="bg-white border border-gray-200 rounded p-6">
+          <div class="text-gold font-cinzel font-semibold text-sm tracking-widest uppercase mb-4">Taxi</div>
+          <div class="space-y-2 text-sm text-gray-600 leading-relaxed">
+            <p>Taxis are available directly in front of the airport terminal.</p>
+            <p><strong>Price:</strong> ~20–30 EUR to city center</p>
+            <p><strong>Travel time:</strong> 20–25 min</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded p-6">
+          <div class="text-gold font-cinzel font-semibold text-sm tracking-widest uppercase mb-4">Bolt (App)</div>
+          <div class="space-y-2 text-sm text-gray-600 leading-relaxed">
+            <p>Order via the <strong>Bolt</strong> app. Only EV available at the airport.</p>
+            <p><strong>Price:</strong> ~10–20 EUR</p>
+            <p><strong>Travel time:</strong> 20–25 min</p>
+            <p class="text-gray-400 text-xs">Note: on-call taxi cannot stop at the airport area for more than two minutes.</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded p-6">
+          <div class="text-gold font-cinzel font-semibold text-sm tracking-widest uppercase mb-4">Bus №337</div>
+          <div class="space-y-2 text-sm text-gray-600 leading-relaxed">
+            <p>Airport → Central Station</p>
+            <p><strong>Price:</strong> 0.3 EUR</p>
+            <p><strong>Departs:</strong> every 25 minutes</p>
+            <p><strong>Hours:</strong> 07:00–20:15</p>
+            <p><strong>Travel time:</strong> 40–45 min</p>
+            <p>Bus stop is directly in front of the airport. Credit card, Google Pay accepted.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="bg-wine-dark border-t border-gold/20 py-12 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+
+        <div class="text-center md:text-left">
+          <div class="font-cinzel font-black text-2xl text-gold tracking-widest mb-1">WOLF'S HEAD</div>
+          <div class="text-xs text-gray-400 tracking-widest uppercase">HEMA Tournament 2026</div>
+        </div>
+
+        <div class="flex gap-4">
+          <a href="https://www.facebook.com/groups/wolfshead.hema/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-sm text-xs tracking-widest px-5">
+            Facebook
+          </a>
+          <a href="https://www.instagram.com/st.george_hema_school/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-sm text-xs tracking-widest px-5">
+            Instagram
+          </a>
+          <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-sm text-xs tracking-widest px-5">
+            Hemagon
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
