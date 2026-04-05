@@ -84,9 +84,7 @@ body {
 .btn-primary {
   background-color: var(--crimson);
   color: #ffffff;
-  font-family: 'Oswald', sans-serif;
   font-weight: 600;
-  letter-spacing: 0.05em;
   border: none;
   transition: background-color 0.2s;
 }
@@ -112,7 +110,6 @@ body {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   color: var(--crimson);
-  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
