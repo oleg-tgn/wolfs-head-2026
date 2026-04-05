@@ -92,6 +92,10 @@ body {
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
+  transition: transform 0.1s ease;
+}
+.btn:active {
+  transform: scale(0.95);
 }
 .btn:disabled {
   background-color: oklch(0.321785 0.02476 255.702 / 0.2);
