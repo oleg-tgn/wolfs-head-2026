@@ -43,7 +43,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 80px 24px 48px;
-  background-image: url('./img/hero-bg.jpg');
+  background-image: url('../img/hero-bg.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -51,7 +51,7 @@ body {
 .hero-text {
   width: calc(100vw - 48px);
   height: calc(100vh - 120px);
-  background-image: url('./img/hero-text.png');
+  background-image: url('../img/hero-text.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -93,10 +93,10 @@ body {
   text-decoration: none;
   white-space: nowrap;
 }
-.btn:disabled {      
+.btn:disabled {
   background-color: oklch(0.321785 0.02476 255.702 / 0.2);
   border-bottom-color: oklch(0.278078 0.029596 256.848 / 0.2);
-  color: oklch(0.278078 0.029596 256.848 / 0.2);  
+  color: oklch(0.278078 0.029596 256.848 / 0.2);
   cursor: not-allowed;
   pointer-events: none;
 }

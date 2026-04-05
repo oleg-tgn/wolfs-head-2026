@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wolf's Head 2026 — HEMA Tournament</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="./tailwind.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/tailwind.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
   <script src="main.js" defer></script>
 </head>
@@ -16,14 +16,14 @@
   ═══════════════════════════════════════════ -->
   <nav class="nav-sticky fixed top-0 left-0 right-0 z-50">
     <div class="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-      <a href="#" class="nav-logo">Wolf's Head 2026</a>
+      <a href="./" class="nav-logo">Wolf's Head 2026</a>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#nominations" class="nav-link">Nominations</a></li>
         <li><a href="#register" class="nav-link">Register</a></li>
         <li><a href="#gallery" class="nav-link">Gallery</a></li>
         <li><a href="#address" class="nav-link">Address</a></li>
-        <li><a href="welcome.html" class="nav-link">Welcome</a></li>
+        <li><a href="./welcome" class="nav-link">Welcome</a></li>
         <li class="nav-mobile-cta">
           <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary font-cinzel text-xs tracking-widest">Register on Hemagon</a>
         </li>
@@ -243,7 +243,7 @@
           <!-- TODO: Venue name -->
           Tbilisi, Georgia. Exact venue will be announced soon</span>
         </p>
-        <a href="welcome.html" class="inline-block mt-2 text-accent text-sm hover:underline">Planning to visit us? →</a>
+        <a href="./welcome/" class="inline-block mt-2 text-accent text-sm hover:underline">Planning to visit us? →</a>
       </div>
     </div>
 
@@ -307,6 +307,10 @@
         });
       }, { rootMargin: '-40% 0px -55% 0px' });
       sections.forEach(function (s) { observer.observe(s); });
+
+      document.querySelector('.nav-logo').addEventListener('click', function () {
+        navLinks.forEach(function (link) { link.classList.remove('active'); });
+      });
     })();
   </script>
 

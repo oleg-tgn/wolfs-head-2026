@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./index.html",
-    "./welcome.html",
+    "./welcome/index.html",
   ],
   theme: {
     extend: {},
