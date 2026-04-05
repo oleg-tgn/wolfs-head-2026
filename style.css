@@ -130,6 +130,11 @@ body {
   letter-spacing: 0.15em;
   font-size: 0.875rem;
   text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.nav-logo:hover {
+  color: var(--crimson-light);
 }
 
 .nav-right {
