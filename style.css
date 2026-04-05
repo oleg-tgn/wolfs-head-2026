@@ -125,6 +125,108 @@ body {
   border-bottom: 1px solid rgba(201, 51, 77, 0.2);
 }
 
+/* ── Nav ── */
+.nav-logo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Single nav-links list — desktop: horizontal row */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #d1d5db;
+}
+.nav-link {
+  color: #d1d5db;
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: var(--gold);
+}
+/* Register CTA inside list — hidden on desktop */
+.nav-mobile-cta { display: none; }
+
+/* Desktop-only Register button */
+.nav-desktop-cta { display: inline-flex; }
+
+/* Burger — hidden on desktop */
+.burger-btn { display: none; }
+
+/* ── Mobile (< 768px) ── */
+@media (max-width: 767px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    position: absolute;
+    top: 3.5rem; /* h-14 */
+    left: 0;
+    right: 0;
+    padding: 1.25rem 1.5rem;
+    background: rgba(21, 8, 16, 0.98);
+    border-top: 1px solid rgba(201, 51, 77, 0.2);
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-mobile-cta { display: block; width: 100%; }
+  .nav-desktop-cta { display: none; }
+  .burger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 2.25rem;
+    height: 2.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+}
+
+/* ── Burger lines ── */
+.burger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #d1d5db;
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  transform-origin: center;
+}
+.burger-active .burger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.burger-active .burger-line:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.burger-active .burger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 section, nav, footer {
   position: relative;
   z-index: 1;

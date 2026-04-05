@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
 </head>
 <body class="text-gray-800">
 
@@ -15,16 +16,26 @@
   ═══════════════════════════════════════════ -->
   <nav class="nav-sticky fixed top-0 left-0 right-0 z-50">
     <div class="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-      <a href="index.html" class="font-cinzel font-bold text-gold tracking-widest text-sm uppercase">Wolf's Head 2026</a>
-      <div class="hidden md:flex items-center gap-8 text-xs tracking-widest uppercase font-cinzel text-gray-300">
-        <a href="index.html#about" class="hover:text-gold transition-colors">About</a>
-        <a href="index.html#nominations" class="hover:text-gold transition-colors">Nominations</a>
-        <a href="index.html#register" class="hover:text-gold transition-colors">Register</a>
-        <a href="index.html#gallery" class="hover:text-gold transition-colors">Gallery</a>
-        <a href="index.html#address" class="hover:text-gold transition-colors">Address</a>
-        <a href="welcome.html" class="text-gold transition-colors">Welcome</a>
+      <a href="index.html" class="nav-logo">Wolf's Head 2026</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#nominations" class="nav-link">Nominations</a></li>
+        <li><a href="index.html#register" class="nav-link">Register</a></li>
+        <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="index.html#address" class="nav-link">Address</a></li>
+        <li><a href="welcome.html" class="nav-link" style="color: var(--gold);">Welcome</a></li>
+        <li class="nav-mobile-cta">
+          <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold font-cinzel text-xs tracking-widest">Register on Hemagon</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="nav-desktop-cta btn btn-sm btn-gold font-cinzel text-xs tracking-widest">Register</a>
+        <button id="burger-btn" class="burger-btn" aria-label="Menu" aria-expanded="false">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
       </div>
-      <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold font-cinzel text-xs tracking-widest">Register</a>
     </div>
   </nav>
 
