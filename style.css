@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 :root {
-  --gold: #c9334d;
-  --gold-light: #e8566e;
+  --crimson: #c9334d;
+  --crimson-light: #e8566e;
   --dark-bg: #f5f3f3;
   --wine: #3d0f1a;
   --wine-dark: #150810;
@@ -17,16 +17,16 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
-.text-gold {
-  color: var(--gold);
+.text-accent {
+  color: var(--crimson);
 }
 
-.border-gold {
-  border-color: var(--gold);
+.border-accent {
+  border-color: var(--crimson);
 }
 
-.bg-gold {
-  background-color: var(--gold);
+.bg-accent {
+  background-color: var(--crimson);
 }
 
 .bg-wine {
@@ -61,14 +61,14 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: var(--gold);
+  color: var(--crimson);
 }
 .divider-ornament::before,
 .divider-ornament::after {
   content: '';
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  background: linear-gradient(to right, transparent, var(--crimson), transparent);
 }
 
 .nomination-card {
@@ -81,40 +81,37 @@ body {
   background: rgba(201, 51, 77, 0.08);
 }
 
-.btn-gold {
-  background-color: var(--gold);
+.btn-primary {
+  background-color: var(--crimson);
   color: #ffffff;
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   letter-spacing: 0.05em;
   border: none;
-  transition: background-color 0.2s, transform 0.1s;
+  transition: background-color 0.2s;
 }
-.btn-gold:hover {
-  background-color: var(--gold-light);
-  transform: translateY(-1px);
-}
-.btn-gold:active {
-  transform: translateY(0);
+.btn-primary:hover {
+  background-color: var(--crimson-light);
 }
 
-.btn-outline-gold {
-  border: 1px solid var(--gold);
-  color: var(--gold);
+.btn-secondary {
+  border: 1px solid var(--crimson);
+  color: var(--crimson);
   font-family: 'Oswald', sans-serif;
   background: transparent;
   letter-spacing: 0.05em;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
-.btn-outline-gold:hover {
+.btn-secondary:hover {
   background: rgba(201, 51, 77, 0.1);
-  color: var(--gold-light);
+  color: var(--crimson-light);
+  border-color: var(--crimson-light);
 }
 
 .section-title {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
-  color: var(--gold);
+  color: var(--crimson);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -129,7 +126,7 @@ body {
 .nav-logo {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  color: var(--gold);
+  color: var(--crimson);
   letter-spacing: 0.15em;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -160,7 +157,7 @@ body {
   transition: color 0.2s;
 }
 .nav-link:hover {
-  color: var(--gold);
+  color: var(--crimson);
 }
 /* Register CTA inside list — hidden on desktop */
 .nav-mobile-cta { display: none; }
@@ -238,14 +235,14 @@ section, nav, footer {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border: 1px solid var(--gold);
-  color: var(--gold);
+  border: 1px solid var(--crimson);
+  color: var(--crimson);
   border-radius: 6px;
   transition: background 0.2s, color 0.2s;
 }
 .social-icon-btn:hover {
   background: rgba(201, 51, 77, 0.15);
-  color: var(--gold-light);
+  color: var(--crimson-light);
 }
 
 /* ── Gallery ── */
