@@ -81,6 +81,38 @@ body {
   background: rgba(201, 51, 77, 0.08);
 }
 
+/* ── Buttons (replaces DaisyUI btn) ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn:disabled {      
+  background-color: oklch(0.321785 0.02476 255.702 / 0.2);
+  border-bottom-color: oklch(0.278078 0.029596 256.848 / 0.2);
+  color: oklch(0.278078 0.029596 256.848 / 0.2);  
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.btn-sm {
+  height: 2rem;
+  min-height: 2rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+.btn-lg {
+  height: 4rem;
+  min-height: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .btn-primary {
   background-color: var(--crimson);
   color: #ffffff;
@@ -95,9 +127,7 @@ body {
 .btn-secondary {
   border: 1px solid var(--crimson);
   color: var(--crimson);
-  font-family: 'Oswald', sans-serif;
   background: transparent;
-  letter-spacing: 0.05em;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 .btn-secondary:hover {
