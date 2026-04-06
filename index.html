@@ -52,8 +52,8 @@
   <link rel="icon" type="image/png" href="./img/favicon.png">
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/tailwind.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="./styles/glightbox.min.css" />
+  <script src="./scripts/main.js" defer></script>
 </head>
 <body class="text-gray-800">
 
@@ -71,11 +71,11 @@
         <li><a href="#address" class="nav-link">Address</a></li>
         <li><a href="./welcome" class="nav-link">Welcome</a></li>
         <li class="nav-mobile-cta">
-          <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary font-cinzel text-xs tracking-widest">Register on Hemagon</a>
+          <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary font-cinzel text-xs tracking-widest">Apply on Hemagon</a>
         </li>
       </ul>
       <div class="nav-right">
-        <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="nav-desktop-cta btn btn-sm btn-primary font-cinzel text-xs tracking-widest">Register</a>
+        <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="nav-desktop-cta btn btn-sm btn-primary font-cinzel text-xs tracking-widest">Apply on Hemagon</a>
         <button id="burger-btn" class="burger-btn" aria-label="Menu" aria-expanded="false">
           <span class="burger-line"></span>
           <span class="burger-line"></span>
@@ -140,7 +140,7 @@
           </p>
           <p class="text-gray-600 leading-relaxed">
             <!-- TODO: Add history / additional context -->
-            Prepare for strong opponents and an atmosphere where every bout is a challenge.
+            Prepare for strong opponents and an atmosphere where every bout is a challenge. The tournament is organized by St. George's HEMA Club.
           </p>
         </div>
 
@@ -313,6 +313,7 @@
         <div class="text-center md:text-left">
           <div class="font-cinzel font-black text-2xl text-accent tracking-widest mb-1">WOLF'S HEAD</div>
           <div class="text-xs text-gray-400 tracking-widest uppercase">HEMA Tournament 2026</div>
+          <div class="text-xs text-gray-500 mt-1">Organized by St. George's HEMA Club</div>
         </div>
 
         <!-- Social links -->
@@ -333,7 +334,7 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="./scripts/glightbox.min.js"></script>
   <script>
     GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
   </script>
