@@ -180,6 +180,11 @@ body {
   border-bottom: 1px solid rgba(201, 51, 77, 0.2);
 }
 
+/* Offset anchor scroll for sticky nav (h-14 = 56px) */
+section[id] {
+  scroll-margin-top: 56px;
+}
+
 /* ── Nav ── */
 .nav-logo {
   font-family: 'Oswald', sans-serif;
