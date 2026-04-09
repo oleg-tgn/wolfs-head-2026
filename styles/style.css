@@ -66,6 +66,7 @@ body {
 
 .hero-bg {
   min-height: 100vh;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,6 +242,9 @@ section[id] {
 
 /* ── Mobile (< 768px) ── */
 @media (max-width: 767px) {
+  .hero-bg {
+    min-height: 100svh;
+  }
   .nav-links {
     display: none;
     flex-direction: column;
