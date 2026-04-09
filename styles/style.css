@@ -325,6 +325,12 @@ section, nav, footer {
   /* mobile 2-col: (100vw - 3rem padding - 0.5rem gap) / 2 */
   grid-auto-rows: calc((100vw - 3.5rem) / 2);
 }
+@media (max-width: 767px) {
+  /* if last item is alone in its row (odd position), stretch it full width */
+  .gallery-grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
 @media (min-width: 768px) {
   /* desktop 3-col: (100vw - 3rem padding - 1rem gaps) / 3 */
   .gallery-grid {
