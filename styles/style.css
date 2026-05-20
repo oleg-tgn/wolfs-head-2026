@@ -71,7 +71,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 80px 24px 48px;
-  background-image: url('../img/hero-bg.jpg');
+  background-image: url('../img/hero-bg.webp');
   background-size: cover;
   background-position: center;
 }
@@ -79,7 +79,7 @@ body {
 .hero-text {
   width: calc(100vw - 48px);
   height: calc(100vh - 120px);
-  background-image: url('../img/hero-text.png');
+  background-image: url('../img/hero-text.webp');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
