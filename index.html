@@ -1,457 +1,800 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preload" href="./img/hero-bg.webp" as="image" fetchpriority="high">
-  <link rel="preload" href="./img/hero-text.webp" as="image" fetchpriority="high">
-  <link rel="preload" href="./fonts/Oswald/oswald-v57-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/Oswald/oswald-v57-latin-500.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/Oswald/oswald-v57-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/Oswald/oswald-v57-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-  <title>Wolf's Head 2026 — HEMA Tournament</title>
-  <meta name="description" content="Wolf's Head 2026 — international HEMA tournament in Tbilisi, Georgia. July 18–19, 2026. Longsword and Saber, Open and Ladies categories. Register on Hemagon." />
-  <link rel="canonical" href="https://hemageorgia.com/" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="./img/hero-bg.webp"
+      as="image"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="./img/hero-text.webp"
+      as="image"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="./fonts/Oswald/oswald-v57-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Oswald/oswald-v57-latin-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Oswald/oswald-v57-latin-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Oswald/oswald-v57-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <title>Wolf's Head 2026 — HEMA Tournament</title>
+    <meta
+      name="description"
+      content="Wolf's Head 2026 — international HEMA tournament in Tbilisi, Georgia. July 18–19, 2026. Longsword and Saber, Open and Ladies categories. Register on Hemagon."
+    />
+    <link rel="canonical" href="https://hemageorgia.com/" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://hemageorgia.com/" />
-  <meta property="og:title" content="Wolf's Head 2026 — HEMA Tournament" />
-  <meta property="og:description" content="International HEMA tournament in Tbilisi, Georgia. July 18–19, 2026. Longsword and Saber, Open and Ladies categories." />
-  <meta property="og:image" content="https://hemageorgia.com/img/wolfshead.webp" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hemageorgia.com/" />
+    <meta property="og:title" content="Wolf's Head 2026 — HEMA Tournament" />
+    <meta
+      property="og:description"
+      content="International HEMA tournament in Tbilisi, Georgia. July 18–19, 2026. Longsword and Saber, Open and Ladies categories."
+    />
+    <meta
+      property="og:image"
+      content="https://hemageorgia.com/img/wolfshead.webp"
+    />
 
-  <!-- Structured Data: Event -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "Wolf's Head 2026",
-    "description": "International HEMA tournament in Tbilisi, Georgia. Longsword and Saber, Open and Ladies categories.",
-    "url": "https://hemageorgia.com/",
-    "startDate": "2026-07-18T09:00:00+04:00",
-    "endDate": "2026-07-19T18:00:00+04:00",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "location": {
-      "@type": "Place",
-      "name": "Tbilisi",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Tbilisi",
-        "addressCountry": "GE"
+    <!-- Structured Data: Event -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Wolf's Head 2026",
+        "description": "International HEMA tournament in Tbilisi, Georgia. Longsword and Saber, Open and Ladies categories.",
+        "url": "https://hemageorgia.com/",
+        "startDate": "2026-07-18T09:00:00+04:00",
+        "endDate": "2026-07-19T18:00:00+04:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "Tbilisi",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tbilisi",
+            "addressCountry": "GE"
+          }
+        },
+        "image": "https://hemageorgia.com/img/wolfshead.webp",
+        "organizer": {
+          "@type": "Organization",
+          "name": "St. George's HEMA School",
+          "url": "https://hemageorgia.com/"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://hemagon.com/tournament/wolfs-head2026",
+          "price": 45,
+          "priceCurrency": "EUR",
+          "validFrom": "2026-06-01",
+          "availability": "https://schema.org/InStock"
+        },
+        "performer": {
+          "@type": "Organization",
+          "name": "St. George's HEMA School",
+          "url": "https://hemageorgia.com/"
+        }
       }
-    },
-    "image": "https://hemageorgia.com/img/wolfshead.webp",
-    "organizer": {
-      "@type": "Organization",
-      "name": "St. George's HEMA School",
-      "url": "https://hemageorgia.com/"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": "https://hemagon.com/tournament/wolfs-head2026",
-      "price": 45,
-      "priceCurrency": "EUR",
-      "validFrom": "2026-06-01",
-      "availability": "https://schema.org/InStock"
-    },
-    "performer": {
-      "@type": "Organization",
-      "name": "St. George's HEMA School",
-      "url": "https://hemageorgia.com/"
-    }
-  }
-  </script>
+    </script>
 
-  <link rel="icon" type="image/png" href="./img/favicon.png">
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" href="./styles/tailwind.css" />
-  <link rel="stylesheet" href="./styles/glightbox.min.css" />
-  <script src="./scripts/glightbox.min.js" defer></script>
-  <script src="./scripts/main.js" defer></script>
-</head>
-<body class="text-gray-800">
-
-  <!-- ═══════════════════════════════════════════
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/tailwind.css" />
+    <link rel="stylesheet" href="./styles/glightbox.min.css" />
+    <script src="./scripts/glightbox.min.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+  </head>
+  <body class="text-gray-800">
+    <!-- ═══════════════════════════════════════════
        NAVIGATION
   ═══════════════════════════════════════════ -->
-  <nav class="nav-sticky fixed top-0 left-0 right-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-      <a href="./" class="nav-logo">Wolf's Head 2026</a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#categories" class="nav-link">Categories</a></li>
-        <li><a href="#register" class="nav-link">Register</a></li>
-        <li><a href="#merch" class="nav-link">Merch</a></li>
-        <li><a href="#sponsors" class="nav-link">Sponsors</a></li>
-        <li><a href="#gallery" class="nav-link">Gallery</a></li>
-        <li><a href="#address" class="nav-link">Address</a></li>
-        <li><a href="./welcome" class="nav-link">Welcome</a></li>
-        <li class="nav-mobile-cta">
-          <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="btn btn-sm px-4 btn-primary font-cinzel text-xs tracking-widest">Apply on Hemagon</a>
-        </li>
-      </ul>
-      <div class="nav-right">
-        <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="nav-desktop-cta btn btn-sm px-4 btn-primary font-cinzel text-xs tracking-widest">Apply on Hemagon</a>
-        <button id="burger-btn" class="burger-btn" aria-label="Menu" aria-expanded="false">
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-        </button>
+    <nav class="nav-sticky fixed top-0 left-0 right-0 z-50">
+      <div
+        class="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between"
+      >
+        <a href="./" class="nav-logo">Wolf's Head 2026</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="#register" class="nav-link">Register</a></li>
+          <li><a href="#merch" class="nav-link">Merch</a></li>
+          <li><a href="#sponsors" class="nav-link">Sponsors</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#address" class="nav-link">Address</a></li>
+          <li><a href="./welcome" class="nav-link">Welcome</a></li>
+          <li class="nav-mobile-cta">
+            <a
+              href="https://hemagon.com/tournament/wolfs-head2026"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-sm px-4 btn-primary font-cinzel text-xs tracking-widest"
+              >Apply on Hemagon</a
+            >
+          </li>
+        </ul>
+        <div class="nav-right">
+          <a
+            href="https://hemagon.com/tournament/wolfs-head2026"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-desktop-cta btn btn-sm px-4 btn-primary font-cinzel text-xs tracking-widest"
+            >Apply on Hemagon</a
+          >
+          <button
+            id="burger-btn"
+            class="burger-btn"
+            aria-label="Menu"
+            aria-expanded="false"
+          >
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <main>
-
-  <!-- ═══════════════════════════════════════════
+    <main>
+      <!-- ═══════════════════════════════════════════
        HERO
   ═══════════════════════════════════════════ -->
-  <section class="hero-bg">
-    <div class="hero-text" role="img" aria-label="Wolf's Head 2026 — HEMA Tournament - 18-19 July"></div>
-  </section>
+      <section class="hero-bg">
+        <div
+          class="hero-text"
+          role="img"
+          aria-label="Wolf's Head 2026 — HEMA Tournament - 18-19 July"
+        ></div>
+      </section>
 
-  <!-- ═══════════════════════════════════════════
+      <!-- ═══════════════════════════════════════════
        ABOUT (KEY INFO BAND + ABOUT TEXT)
   ═══════════════════════════════════════════ -->
-  <section id="about">
-
-  <div class="py-12 px-6 bg-wine">
-    <div class="max-w-4xl mx-auto">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div>
-          <div class="text-white/65 text-xs font-cinzel tracking-widest uppercase mb-2">When</div>
-          <div class="font-cinzel text-white font-semibold text-lg leading-tight">July 18-19</div>
-          <div class="text-white/60 text-xs mt-1">2026</div>
+      <section id="about">
+        <div class="py-12 px-6 bg-wine">
+          <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div>
+                <div
+                  class="text-white/65 text-xs font-cinzel tracking-widest uppercase mb-2"
+                >
+                  When
+                </div>
+                <div
+                  class="font-cinzel text-white font-semibold text-lg leading-tight"
+                >
+                  July 18-19
+                </div>
+                <div class="text-white/60 text-xs mt-1">2026</div>
+              </div>
+              <div>
+                <div
+                  class="text-white/65 text-xs font-cinzel tracking-widest uppercase mb-2"
+                >
+                  Where
+                </div>
+                <div
+                  class="font-cinzel text-white font-semibold text-lg leading-tight"
+                >
+                  Tbilisi
+                </div>
+                <div class="text-white/60 text-xs mt-1">Georgia</div>
+              </div>
+              <div>
+                <div
+                  class="text-white/65 text-xs font-cinzel tracking-widest uppercase mb-2"
+                >
+                  Weapons
+                </div>
+                <div
+                  class="font-cinzel text-white font-semibold text-lg leading-tight"
+                >
+                  Longsword <span class="text-white/50">·</span> Saber
+                </div>
+              </div>
+              <div>
+                <div
+                  class="text-white/65 text-xs font-cinzel tracking-widest uppercase mb-2"
+                >
+                  Categories
+                </div>
+                <div
+                  class="font-cinzel text-white font-semibold text-lg leading-tight"
+                >
+                  Open <span class="text-white/30">·</span> Ladies
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <div class="text-white/65 text-xs font-cinzel tracking-widest uppercase mb-2">Where</div>
-          <div class="font-cinzel text-white font-semibold text-lg leading-tight">Tbilisi</div>
-          <div class="text-white/60 text-xs mt-1">Georgia</div>
-        </div>
-        <div>
-          <div class="text-white/65 text-xs font-cinzel tracking-widest uppercase mb-2">Weapons</div>
-          <div class="font-cinzel text-white font-semibold text-lg leading-tight">Longsword <span class="text-white/50">·</span> Saber</div>
-        </div>
-        <div>
-          <div class="text-white/65 text-xs font-cinzel tracking-widest uppercase mb-2">Categories</div>
-          <div class="font-cinzel text-white font-semibold text-lg leading-tight">Open <span class="text-white/30">·</span> Ladies</div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="py-24 px-6">
-    <div class="max-w-4xl mx-auto">
-      <div class="divider-ornament mb-14">
-        <span class="section-title text-sm tracking-[0.3em]">About</span>
-      </div>
+        <div class="py-24 px-6">
+          <div class="max-w-4xl mx-auto">
+            <div class="divider-ornament mb-14">
+              <span class="section-title text-sm tracking-[0.3em]">About</span>
+            </div>
 
-      <div class="grid md:grid-cols-2 gap-12">
-        <div>
-          <h2 class="font-cinzel text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-            Wolf’s Head returns!
-          </h2>
-          <p class="text-gray-600 leading-relaxed mb-4">
-            <!-- TODO: Add tournament description -->
-            We continue a tradition that has already become a landmark event for the Georgian HEMA community. Once again, the tournament will bring together fencers ready to compete on the field in intense, fair competition.
-          </p>
-          <p class="text-gray-600 leading-relaxed">
-            <!-- TODO: Add history / additional context -->
-            Prepare for strong opponents and an atmosphere where every bout is a challenge. The tournament is organized by St. George's HEMA School.
-          </p>
+            <div class="grid md:grid-cols-2 gap-12">
+              <div>
+                <h2
+                  class="font-cinzel text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight"
+                >
+                  Wolf’s Head returns!
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                  <!-- TODO: Add tournament description -->
+                  We continue a tradition that has already become a landmark
+                  event for the Georgian HEMA community. Once again, the
+                  tournament will bring together fencers ready to compete on the
+                  field in intense, fair competition.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                  <!-- TODO: Add history / additional context -->
+                  Prepare for strong opponents and an atmosphere where every
+                  bout is a challenge. The tournament is organized by St.
+                  George's HEMA School.
+                </p>
+              </div>
+
+              <div class="aspect-[4/3] rounded overflow-hidden">
+                <img
+                  src="img/about.webp"
+                  alt="Sword and diplomas from Wolf's Head tournament"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="aspect-[4/3] rounded overflow-hidden">
-          <img src="img/about.webp" alt="Sword and diplomas from Wolf's Head tournament" class="w-full h-full object-cover" />
-        </div>
-      </div>
-    </div>
-  </div>
-
-  </section>
-
-  <!-- ═══════════════════════════════════════════
+      <!-- ═══════════════════════════════════════════
        CATEGORIES
   ═══════════════════════════════════════════ -->
-  <section id="categories" class="py-24 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto">
-      <div class="divider-ornament mb-14">
-        <span class="section-title text-sm tracking-[0.3em]">Categories</span>
-      </div>
-
-      <div class="max-w-2xl mx-auto">
-        <div class="grid grid-cols-2 gap-px bg-gray-200">
-
-          <div class="bg-gray-50 px-8 py-6">
-            <div class="text-accent text-xs tracking-[0.3em] uppercase font-semibold mb-5">Longsword</div>
-            <div class="space-y-3">
-              <div>
-                <div class="text-gray-900 font-medium text-lg">Open</div>
-                <div class="mt-1 ml-3 space-y-0.5">
-                  <div class="text-gray-600 text-sm">— Base</div>
-                  <div class="text-gray-600 text-sm">— Advanced</div>
-                </div>
-              </div>
-              <div class="text-gray-900 font-medium text-lg">Ladies</div>
-            </div>
+      <section id="categories" class="py-24 px-6 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+          <div class="divider-ornament mb-14">
+            <span class="section-title text-sm tracking-[0.3em]"
+              >Categories</span
+            >
           </div>
 
-          <div class="bg-gray-50 px-8 py-6">
-            <div class="text-accent text-xs tracking-[0.3em] uppercase font-semibold mb-5">Saber</div>
-            <div class="space-y-3">
-              <div>
-                <div class="text-gray-900 font-medium text-lg">Open</div>
-                <div class="mt-1 ml-3 space-y-0.5">
-                  <div class="text-gray-600 text-sm">— Base</div>
-                  <div class="text-gray-600 text-sm">— Advanced</div>
+          <div class="max-w-2xl mx-auto">
+            <div class="grid grid-cols-2 gap-px bg-gray-200">
+              <div class="bg-gray-50 px-8 py-6">
+                <div
+                  class="text-accent text-xs tracking-[0.3em] uppercase font-semibold mb-5"
+                >
+                  Longsword
+                </div>
+                <div class="space-y-3">
+                  <div>
+                    <div class="text-gray-900 font-medium text-lg">Open</div>
+                    <div class="mt-1 ml-3 space-y-0.5">
+                      <div class="text-gray-600 text-sm">— Base</div>
+                      <div class="text-gray-600 text-sm">— Advanced</div>
+                    </div>
+                  </div>
+                  <div class="text-gray-900 font-medium text-lg">Ladies</div>
                 </div>
               </div>
-              <div class="text-gray-900 font-medium text-lg">Ladies</div>
+
+              <div class="bg-gray-50 px-8 py-6">
+                <div
+                  class="text-accent text-xs tracking-[0.3em] uppercase font-semibold mb-5"
+                >
+                  Saber
+                </div>
+                <div class="space-y-3">
+                  <div>
+                    <div class="text-gray-900 font-medium text-lg">Open</div>
+                    <div class="mt-1 ml-3 space-y-0.5">
+                      <div class="text-gray-600 text-sm">— Base</div>
+                      <div class="text-gray-600 text-sm">— Advanced</div>
+                    </div>
+                  </div>
+                  <div class="text-gray-900 font-medium text-lg">Ladies</div>
+                </div>
+              </div>
+            </div>
+
+            <p class="mt-8 text-sm text-gray-500 leading-relaxed">
+              In the Longsword & Saber Open division, the pool stage serves as a
+              qualifier determining placement into the Base or Advanced bracket.
+            </p>
+
+            <div class="text-center mt-12">
+              <a
+                href="https://docs.google.com/document/d/19VJQu0sUZO-FcJFy1Tn5C6J0B3s89kdKif-a8REkHJ4"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-secondary btn-lg px-12 text-sm tracking-widest inline-flex items-center gap-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  class="w-5 h-5"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M192 112L304 112L304 200C304 239.8 336.2 272 376 272L464 272L464 512C464 520.8 456.8 528 448 528L192 528C183.2 528 176 520.8 176 512L176 128C176 119.2 183.2 112 192 112zM352 131.9L444.1 224L376 224C362.7 224 352 213.3 352 200L352 131.9zM192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 250.5C512 233.5 505.3 217.2 493.3 205.2L370.7 82.7C358.7 70.7 342.5 64 325.5 64L192 64zM248 320C234.7 320 224 330.7 224 344C224 357.3 234.7 368 248 368L392 368C405.3 368 416 357.3 416 344C416 330.7 405.3 320 392 320L248 320zM248 416C234.7 416 224 426.7 224 440C224 453.3 234.7 464 248 464L392 464C405.3 464 416 453.3 416 440C416 426.7 405.3 416 392 416L248 416z"
+                  />
+                </svg>
+                Tournament Rules
+              </a>
             </div>
           </div>
-
         </div>
+      </section>
 
-        <p class="mt-8 text-sm text-gray-500 leading-relaxed">
-          In the Longsword & Saber Open division, the pool stage serves as a qualifier determining placement into the Base or Advanced bracket.
-        </p>
-
-        <div class="text-center mt-12">
-          <a href="https://docs.google.com/document/d/19VJQu0sUZO-FcJFy1Tn5C6J0B3s89kdKif-a8REkHJ4" target="_blank" rel="noopener" class="btn btn-secondary btn-lg px-12 text-sm tracking-widest inline-flex items-center gap-3">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M192 112L304 112L304 200C304 239.8 336.2 272 376 272L464 272L464 512C464 520.8 456.8 528 448 528L192 528C183.2 528 176 520.8 176 512L176 128C176 119.2 183.2 112 192 112zM352 131.9L444.1 224L376 224C362.7 224 352 213.3 352 200L352 131.9zM192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 250.5C512 233.5 505.3 217.2 493.3 205.2L370.7 82.7C358.7 70.7 342.5 64 325.5 64L192 64zM248 320C234.7 320 224 330.7 224 344C224 357.3 234.7 368 248 368L392 368C405.3 368 416 357.3 416 344C416 330.7 405.3 320 392 320L248 320zM248 416C234.7 416 224 426.7 224 440C224 453.3 234.7 464 248 464L392 464C405.3 464 416 453.3 416 440C416 426.7 405.3 416 392 416L248 416z"/></svg>
-            Tournament Rules
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
+      <!-- ═══════════════════════════════════════════
        REGISTRATION
   ═══════════════════════════════════════════ -->
-  <section id="register" class="py-24 px-6">
-    <div class="max-w-5xl mx-auto text-center">
-      <div class="divider-ornament mb-14">
-        <span class="section-title text-sm tracking-[0.3em]">Registration</span>
-      </div>
+      <section id="register" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+          <div class="divider-ornament mb-14">
+            <span class="section-title text-sm tracking-[0.3em]"
+              >Registration</span
+            >
+          </div>
 
-      <h2 class="font-cinzel text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        Join the Tournament
-      </h2>
-      <p class="text-gray-600 mb-2">
-        Registration is handled via <span class="text-accent">Hemagon</span>.
-      </p>
-      <p class="text-gray-600 text-sm mb-10">
-        The early bird rate (Stage 1) is €35 per category until June<br/>
-        Starting June 1st (Stage 2), the fee will be €45 per category
-      </p>
+          <h2
+            class="font-cinzel text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+          >
+            Join the Tournament
+          </h2>
+          <p class="text-gray-600 mb-2">
+            Registration is handled via
+            <span class="text-accent">Hemagon</span>.
+          </p>
+          <p class="text-gray-600 text-sm mb-10">
+            The early bird rate (Stage 1) is €35 per category until June<br />
+            Starting June 1st (Stage 2), the fee will be €45 per category
+          </p>
 
-      <div class="flex justify-center">
-        <a
-          href="https://hemagon.com/tournament/wolfs-head2026"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-primary btn-lg px-14 text-sm tracking-widest"
-        >
-          Register on Hemagon
-        </a>
-      </div>
-    </div>
-  </section>
+          <div class="flex justify-center">
+            <a
+              href="https://hemagon.com/tournament/wolfs-head2026"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary btn-lg px-14 text-sm tracking-widest"
+            >
+              Register on Hemagon
+            </a>
+          </div>
+        </div>
+      </section>
 
-  <!-- ═══════════════════════════════════════════
+      <!-- ═══════════════════════════════════════════
        T-SHIRTS / Merch
   ═══════════════════════════════════════════ -->
-  <section id="merch" class="py-24 px-6 bg-gray-50">
-    <div class="max-w-4xl mx-auto">
-      <div class="divider-ornament mb-14">
-        <span class="section-title text-sm tracking-[0.3em]">Merchandise</span>
-      </div>
+      <section id="merch" class="py-24 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+          <div class="divider-ornament mb-14">
+            <span class="section-title text-sm tracking-[0.3em]"
+              >Merchandise</span
+            >
+          </div>
 
-      <div class="text-center mb-12">
-        <h2 class="font-cinzel text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Tournament T-Shirt
-        </h2>
-        <p class="text-gray-600 text-sm mb-10">
-          Official Wolf's Head 2026 tournament t-shirt. Price €20
-        </p>        
-      </div>
+          <div class="text-center mb-12">
+            <h2
+              class="font-cinzel text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+            >
+              Tournament T-Shirt
+            </h2>
+            <p class="text-gray-600 text-sm mb-10">
+              Official Wolf's Head 2026 tournament t-shirt. Price €20
+            </p>
+          </div>
 
-      <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-10">
-        <a href="img/t-shirt/t-shirt_front_900.webp" class="glightbox rounded-lg overflow-hidden cursor-zoom-in transition-transform duration-300 hover:scale-105" data-gallery="tshirts" data-description="Wolf's Head 2026 — Tournament T-Shirt (front)">
-          <img src="img/t-shirt/t-shirt_front_350.webp" alt="Wolf's Head 2026 T-shirt, front" class="w-full object-cover" />
-        </a>
-        <a href="img/t-shirt/t-shirt_back_900.webp" class="glightbox rounded-lg overflow-hidden cursor-zoom-in transition-transform duration-300 hover:scale-105" data-gallery="tshirts" data-description="Wolf's Head 2026 — Tournament T-Shirt (back)">
-          <img src="img/t-shirt/t-shirt_back_350.webp" alt="Wolf's Head 2026 T-shirt, back" class="w-full object-cover" />
-        </a>
-      </div>
+          <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-10">
+            <a
+              href="img/t-shirt/t-shirt_front_900.webp"
+              class="glightbox rounded-lg overflow-hidden cursor-zoom-in transition-transform duration-300 hover:scale-105"
+              data-gallery="tshirts"
+              data-description="Wolf's Head 2026 — Tournament T-Shirt (front)"
+            >
+              <img
+                src="img/t-shirt/t-shirt_front_350.webp"
+                alt="Wolf's Head 2026 T-shirt, front"
+                class="w-full object-cover"
+              />
+            </a>
+            <a
+              href="img/t-shirt/t-shirt_back_900.webp"
+              class="glightbox rounded-lg overflow-hidden cursor-zoom-in transition-transform duration-300 hover:scale-105"
+              data-gallery="tshirts"
+              data-description="Wolf's Head 2026 — Tournament T-Shirt (back)"
+            >
+              <img
+                src="img/t-shirt/t-shirt_back_350.webp"
+                alt="Wolf's Head 2026 T-shirt, back"
+                class="w-full object-cover"
+              />
+            </a>
+          </div>
 
-      <div class="text-center">
-        <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg px-12 text-sm tracking-widest">
-          Order with Registration
-        </a>
-      </div>
-    </div>
-  </section>
+          <div class="text-center">
+            <a
+              href="https://hemagon.com/tournament/wolfs-head2026"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary btn-lg px-12 text-sm tracking-widest"
+            >
+              Order with Registration
+            </a>
+          </div>
+        </div>
+      </section>
 
-  <!-- ═══════════════════════════════════════════
+      <!-- ═══════════════════════════════════════════
     SPONSORS
   ═══════════════════════════════════════════ -->
-  <section id="sponsors" class="py-24 px-6">
-    <div class="max-w-5xl mx-auto">
-      <div class="divider-ornament mb-14">
-        <span class="section-title text-sm tracking-[0.3em]">Sponsors</span>
-      </div>
+      <section id="sponsors" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+          <div class="divider-ornament mb-14">
+            <span class="section-title text-sm tracking-[0.3em]">Sponsors</span>
+          </div>
 
-      <!-- Premium sponsors: larger -->
-      <div class="flex flex-wrap justify-center items-center gap-10 mb-10">
-        <a href="https://kvetun-armoury.ru/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110">
-          <img src="img/sponsors/kvetun.webp" alt="Kvetun" class="h-36 w-auto object-contain block" />
-        </a>
-        <a href="https://pikearmory.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110">
-          <img src="img/sponsors/pike.webp" alt="Pike" class="h-36 w-auto object-contain block" />
-        </a>
-        <a href="https://supfen.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110">
-          <img src="img/sponsors/superior-fencing.webp" alt="Superior Fencing" class="h-36 w-auto object-contain block" />
-        </a>
-      </div>
+          <!-- Premium sponsors: larger -->
+          <div class="flex flex-wrap justify-center items-center gap-10 mb-10">
+            <a
+              href="https://kvetun-armoury.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110"
+            >
+              <img
+                src="img/sponsors/kvetun.webp"
+                alt="Kvetun"
+                class="h-36 w-auto object-contain block"
+              />
+            </a>
+            <a
+              href="https://pikearmory.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110"
+            >
+              <img
+                src="img/sponsors/pike.webp"
+                alt="Pike"
+                class="h-36 w-auto object-contain block"
+              />
+            </a>
+            <a
+              href="https://supfen.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110"
+            >
+              <img
+                src="img/sponsors/superior-fencing.webp"
+                alt="Superior Fencing"
+                class="h-36 w-auto object-contain block"
+              />
+            </a>
+          </div>
 
-      <!-- Regular sponsors -->
-      <div class="flex flex-wrap justify-center items-center gap-8">
-        <a href="https://vk.com/pangolin_mittens" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110">
-          <img src="img/sponsors/pangolin.webp" alt="Pangolin" class="h-28 w-auto object-contain block" />
-        </a>
-        <a href="https://sparringglove.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110">
-          <img src="img/sponsors/sparringgloves.webp" alt="Sparring Gloves" class="h-28 w-auto object-contain block" />
-        </a>
-        <a href="https://www.reddragonarmoury.com/red-dragon-hema" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110">
-          <img src="img/sponsors/reddragon.webp" alt="Red Dragon" class="h-28 w-auto object-contain block" />
-        </a>
-        <a href="https://regenyei.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110">
-          <img src="img/sponsors/Regenyei.webp" alt="Regenyei" class="h-28 w-auto object-contain block" />
-        </a>
-        <a href="https://sigiforge.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110">
-          <img src="img/sponsors/sigi.webp" alt="Sigi" class="h-28 w-auto object-contain block" />
-        </a>        
-         <a href="https://saintmark.se/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110">
-          <img src="img/sponsors/st.mark.webp" alt="St. Mark" class="h-28 w-auto object-contain block" />
-        </a> 
-        <a href="https://histfenc.eu/en/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110">
-          <img src="img/sponsors/spes.webp" alt="Spes" class="h-28 w-auto object-contain block" />
-        </a>
-        <a href="https://kriegerweapons.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110">
-          <img src="img/sponsors/kriger.webp" alt="Kriger" class="h-28 w-auto object-contain block" />
-        </a>
-      </div>
-      
-    </div>
-  </section>
+          <!-- Regular sponsors -->
+          <div class="flex flex-wrap justify-center items-center gap-8">
+            <a
+              href="https://vk.com/pangolin_mittens"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110"
+            >
+              <img
+                src="img/sponsors/pangolin.webp"
+                alt="Pangolin"
+                class="h-28 w-auto object-contain block"
+              />
+            </a>
+            <a
+              href="https://sparringglove.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110"
+            >
+              <img
+                src="img/sponsors/sparringgloves.webp"
+                alt="Sparring Gloves"
+                class="h-28 w-auto object-contain block"
+              />
+            </a>
+            <a
+              href="https://www.reddragonarmoury.com/red-dragon-hema"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110"
+            >
+              <img
+                src="img/sponsors/reddragon.webp"
+                alt="Red Dragon"
+                class="h-28 w-auto object-contain block"
+              />
+            </a>
+            <a
+              href="https://regenyei.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110"
+            >
+              <img
+                src="img/sponsors/Regenyei.webp"
+                alt="Regenyei"
+                class="h-28 w-auto object-contain block"
+              />
+            </a>
+            <a
+              href="https://sigiforge.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110"
+            >
+              <img
+                src="img/sponsors/sigi.webp"
+                alt="Sigi"
+                class="h-28 w-auto object-contain block"
+              />
+            </a>
+            <a
+              href="https://saintmark.se/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110"
+            >
+              <img
+                src="img/sponsors/st.mark.webp"
+                alt="St. Mark"
+                class="h-28 w-auto object-contain block"
+              />
+            </a>
+            <a
+              href="https://histfenc.eu/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110"
+            >
+              <img
+                src="img/sponsors/spes.webp"
+                alt="Spes"
+                class="h-28 w-auto object-contain block"
+              />
+            </a>
+            <a
+              href="https://kriegerweapons.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center p-2 transition-transform duration-300 hover:scale-110"
+            >
+              <img
+                src="img/sponsors/kriger.webp"
+                alt="Kriger"
+                class="h-28 w-auto object-contain block"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
 
-  <!-- ═══════════════════════════════════════════
+      <!-- ═══════════════════════════════════════════
        PHOTO GALLERY
   ═══════════════════════════════════════════ -->
-  <section id="gallery" class="py-24 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto">
-      <div class="divider-ornament mb-14">
-        <span class="section-title text-sm tracking-[0.3em]">Gallery</span>
-      </div>
+      <section id="gallery" class="py-24 px-6 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+          <div class="divider-ornament mb-14">
+            <span class="section-title text-sm tracking-[0.3em]">Gallery</span>
+          </div>
 
-      <div class="gallery-grid grid grid-cols-2 md:grid-cols-3 gap-2">
+          <div class="gallery-grid grid grid-cols-2 md:grid-cols-3 gap-2">
+            <!-- Row 1: wide + square -->
+            <a
+              href="img/photos/wolfs-head-hema-1.webp"
+              class="glightbox rounded gallery-thumb md:col-span-2"
+              data-gallery="gallery2026"
+            >
+              <img
+                src="img/photos/wolfs-head-hema-1_350.webp"
+                alt="Wolf's Head tournament, photo 1"
+              />
+            </a>
+            <a
+              href="img/photos/wolfs-head-hema-2.webp"
+              class="glightbox rounded gallery-thumb"
+              data-gallery="gallery2026"
+            >
+              <img
+                src="img/photos/wolfs-head-hema-2_350.webp"
+                alt="Wolf's Head tournament, photo 2"
+              />
+            </a>
 
-        <!-- Row 1: wide + square -->
-        <a href="img/photos/wolfs-head-hema-1.webp" class="glightbox rounded gallery-thumb md:col-span-2" data-gallery="gallery2026">
-          <img src="img/photos/wolfs-head-hema-1_350.webp" alt="Wolf's Head tournament, photo 1" />
-        </a>
-        <a href="img/photos/wolfs-head-hema-2.webp" class="glightbox rounded gallery-thumb" data-gallery="gallery2026">
-          <img src="img/photos/wolfs-head-hema-2_350.webp" alt="Wolf's Head tournament, photo 2" />
-        </a>
+            <!-- Row 2: three squares -->
+            <a
+              href="img/photos/wolfs-head-hema-3.webp"
+              class="glightbox rounded gallery-thumb"
+              data-gallery="gallery2026"
+            >
+              <img
+                src="img/photos/wolfs-head-hema-3_350.webp"
+                alt="Wolf's Head tournament, photo 3"
+              />
+            </a>
+            <a
+              href="img/photos/wolfs-head-hema-4.webp"
+              class="glightbox rounded gallery-thumb"
+              data-gallery="gallery2026"
+            >
+              <img
+                src="img/photos/wolfs-head-hema-4_350.webp"
+                alt="Wolf's Head tournament, photo 4"
+              />
+            </a>
+            <a
+              href="img/photos/wolfs-head-hema-5.webp"
+              class="glightbox rounded gallery-thumb"
+              data-gallery="gallery2026"
+            >
+              <img
+                src="img/photos/wolfs-head-hema-5_350.webp"
+                alt="Wolf's Head tournament, photo 5"
+              />
+            </a>
 
-        <!-- Row 2: three squares -->
-        <a href="img/photos/wolfs-head-hema-3.webp" class="glightbox rounded gallery-thumb" data-gallery="gallery2026">
-          <img src="img/photos/wolfs-head-hema-3_350.webp" alt="Wolf's Head tournament, photo 3" />
-        </a>
-        <a href="img/photos/wolfs-head-hema-4.webp" class="glightbox rounded gallery-thumb" data-gallery="gallery2026">
-          <img src="img/photos/wolfs-head-hema-4_350.webp" alt="Wolf's Head tournament, photo 4" />
-        </a>
-        <a href="img/photos/wolfs-head-hema-5.webp" class="glightbox rounded gallery-thumb" data-gallery="gallery2026">
-          <img src="img/photos/wolfs-head-hema-5_350.webp" alt="Wolf's Head tournament, photo 5" />
-        </a>
+            <!-- Row 3: square + wide -->
+            <a
+              href="img/photos/wolfs-head-hema-6.webp"
+              class="glightbox rounded gallery-thumb"
+              data-gallery="gallery2026"
+            >
+              <img
+                src="img/photos/wolfs-head-hema-6_350.webp"
+                alt="Wolf's Head tournament, photo 6"
+              />
+            </a>
+            <a
+              href="img/photos/wolfs-head-hema-7.webp"
+              class="glightbox rounded gallery-thumb md:col-span-2"
+              data-gallery="gallery2026"
+            >
+              <img
+                src="img/photos/wolfs-head-hema-7_350.webp"
+                alt="Wolf's Head tournament, photo 7"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <!-- Row 3: square + wide -->
-        <a href="img/photos/wolfs-head-hema-6.webp" class="glightbox rounded gallery-thumb" data-gallery="gallery2026">
-          <img src="img/photos/wolfs-head-hema-6_350.webp" alt="Wolf's Head tournament, photo 6" />
-        </a>
-        <a href="img/photos/wolfs-head-hema-7.webp" class="glightbox rounded gallery-thumb md:col-span-2" data-gallery="gallery2026">
-          <img src="img/photos/wolfs-head-hema-7_350.webp" alt="Wolf's Head tournament, photo 7" />
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
+      <!-- ═══════════════════════════════════════════
        Address
   ═══════════════════════════════════════════ -->
-  <section id="address" class="pt-24 pb-0">
-    <div class="max-w-5xl px-6 mx-auto">
-      <div class="divider-ornament mb-7">
-        <span class="section-title text-sm tracking-[0.3em]">Address</span>
-      </div>
+      <section id="address" class="pt-24 pb-0">
+        <div class="max-w-5xl px-6 mx-auto">
+          <div class="divider-ornament mb-7">
+            <span class="section-title text-sm tracking-[0.3em]">Address</span>
+          </div>
 
-      <div class="mb-10 text-center">
-        <p class="font-cinzel text-sm mb-1">
-          <!-- TODO: Venue name -->
-          Tbilisi, Georgia. Exact venue will be announced soon</span>
-        </p>
-        <a href="./welcome/" class="inline-block mt-2 text-accent text-sm hover:underline">Planning to visit us? →</a>
-      </div>
-    </div>
+          <div class="mb-10 text-center">
+            <p class="font-cinzel text-sm mb-1">
+              1 Marshal Archil Gelovani Ave, Tbilisi, Georgia
+            </p>
+            <a
+              href="./welcome/"
+              class="inline-block mt-2 text-accent text-sm hover:underline"
+              >Planning to visit us? →</a
+            >
+          </div>
+        </div>
 
-    <div class="border-t border-accent/20" style="height: 420px;">
-      <iframe
-        src="https://maps.google.com/maps?q=Tbilisi,Georgia&t=&z=12&ie=UTF8&iwloc=&output=embed"
-        width="100%" height="100%"
-        title="Map of Tbilisi, Georgia"
-        style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-  </section>
+        <div class="border-t border-accent/20" style="height: 420px">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47623.750762521544!2d44.7717825!3d41.753212399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473e8e57caf57%3A0xbfea92b070b0a545!2zQnVja3N3b29kIEdlbG92YW5pIC8g4YOR4YOQ4YOl4YOh4YOV4YOj4YOT4YOY4YOhIOGDoeGDmeGDneGDmuGDkCDhg5Lhg5Thg5rhg53hg5Xhg5Dhg5zhg5bhg5Q!5e0!3m2!1sru!2sge!4v1782056387035!5m2!1sru!2sge"
+            width="100%"
+            height="100%"
+            title="Buckswod Gelovani, Tbilisi"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
 
-  </main>
-
-  <!-- ═══════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════
        FOOTER / SOCIAL
   ═══════════════════════════════════════════ -->
-  <footer class="bg-wine-dark py-12">
-    <div class="max-w-6xl px-6 mx-auto">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+    <footer class="bg-wine-dark py-12">
+      <div class="max-w-6xl px-6 mx-auto">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-8"
+        >
+          <div class="text-center md:text-left">
+            <div
+              class="font-cinzel font-black text-2xl text-accent tracking-widest mb-1"
+            >
+              WOLF'S HEAD
+            </div>
+            <div class="text-xs text-gray-400 tracking-widest uppercase">
+              HEMA Tournament 2026
+            </div>
+            <div class="text-xs text-gray-500 mt-1">
+              Organized by St. George's HEMA School
+            </div>
+          </div>
 
-        <div class="text-center md:text-left">
-          <div class="font-cinzel font-black text-2xl text-accent tracking-widest mb-1">WOLF'S HEAD</div>
-          <div class="text-xs text-gray-400 tracking-widest uppercase">HEMA Tournament 2026</div>
-          <div class="text-xs text-gray-500 mt-1">Organized by St. George's HEMA School</div>          
+          <!-- Social links -->
+          <div class="flex gap-4">
+            <a
+              href="https://www.facebook.com/groups/wolfshead.hema/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary btn-sm text-xs tracking-widest px-5"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/st.george_hema_school/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary btn-sm text-xs tracking-widest px-5"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://hemagon.com/tournament/wolfs-head2026"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary btn-sm text-xs tracking-widest px-5"
+            >
+              Hemagon
+            </a>
+          </div>
         </div>
-
-        <!-- Social links -->
-        <div class="flex gap-4">
-          <a href="https://www.facebook.com/groups/wolfshead.hema/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm text-xs tracking-widest px-5">
-            Facebook
-          </a>
-          <a href="https://www.instagram.com/st.george_hema_school/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm text-xs tracking-widest px-5">
-            Instagram
-          </a>
-          <a href="https://hemagon.com/tournament/wolfs-head2026" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm text-xs tracking-widest px-5">
-            Hemagon
-          </a>
+        <div class="border-t border-white/10 mt-6 pt-6 md:mt-3 md:pt-3">
+          <div class="text-xs text-gray-500 text-center md:text-left">
+            Developed by
+            <a
+              href="https://www.linkedin.com/in/stelmakholegdev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline hover:text-accent transition-colors duration-200"
+              >Oleg S.</a
+            >
+          </div>
         </div>
       </div>
-      <div class="border-t border-white/10 mt-6 pt-6 md:mt-3 md:pt-3">
-        <div class="text-xs text-gray-500 text-center md:text-left">Developed by <a href="https://www.linkedin.com/in/stelmakholegdev/" target="_blank" rel="noopener noreferrer" class="underline hover:text-accent transition-colors duration-200">Oleg S.</a></div>
-      </div>
-    </div>
-  </footer>
-
-
-</body>
+    </footer>
+  </body>
 </html>
